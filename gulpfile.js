@@ -36,7 +36,7 @@ function watch () {
 }
 
 gulp.task('default', function () {
-    watch(); //for gulp
+    watch(); //for gulp start
 })
 
-exports.watch = watch; //for gulp watch
+exports.watch = watch; //for gulp watch start

@@ -3,7 +3,69 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/normalize.css")
         link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(href!="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap", rel="stylesheet",)
         title Canvas
     body
-        h1 Привет из Pug!!
+        header
+            .header-wrapper
+                .nav-wrapper
+                    .section-header-logo Counsel
+                        .section-header-logo_subtile Own your course
+                    nav.section-header__nav
+                        ul.section-header__nav-wrapper
+                            li
+                                a(href="#") About
+                            li
+                                a(href="#") Services
+                            li
+                                a(href="#") Why We Best
+                            li
+                                a(href="#") Testimonials
+                            li
+                                a(href="#") Contact
+                            li
+                                a(href="#")
+                                    img(src="img/english.png", alt="")
+                            li 
+                                a(href="#")
+                                    i.fa.fa-caret-down
+                section.header-content-wrapper                                                 
+                    nav.section-header__slider
+                        span 
+                            i.fa.fa-long-arrow-left
+                        span
+                            | previous / Next 
+                        span 
+                            i.fa.fa-long-arrow-right
+                    section.products
+                        | Consumer<br>
+                        | Products<br>
+                        | Consulting
+                        section.more
+                            | LEARN MORE
+                    section.ring
+                        img(src="img/ring.png", alt="")
+        main
+            .body-wrapper
+                .body-wrapper-inner
+                    .body-content
+                        .body-content__title
+                            |Take away the risk & you
+                            |can do anything.
+                        .body-content__subtitle
+                            |Rapid solutions to the most complex business
+                            |challenges with cooperative process-driven.
+                        .body-content__main-text
+                            |Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
+                            |justo sapien, tempus 
+                            |sit amet rutrum eu, commodo eu lacus. 
+                            |Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
+                        .body-content__more
+                            |Take a Tour
+                    .body-figures
+                        .body-figures__first
+                        .body-figures__second
+

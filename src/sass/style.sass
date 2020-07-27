@@ -1,13 +1,174 @@
-// == Vars ==
-$color-main: green
-$color-secondary: yellow
-// / == Vars ==
+@font-face 
+    font-family: 'Myriad Pro' 
+    src: url(../fonts/MyriadPro-Regular.woff)
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: 'Helvetica-Rounded-LT-Black'
+    src: url('../fonts/Helvetica-Rounded-LT-Black.woff')
+    font-weight: normal
+    font-style: normal
+@font-face 
+    font-family: 'Segoe UI Emoji'
+    src: url('../fonts/seguiemj.woff')
+    font-weight: normal
+    font-style: normal
 
-headerf
-    display: flex
-
+// === Vars ===
+// / === Vars ===
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
 body 
-    background-color: $color-main
+    font-family: Montserrat
+header
+    background: url(../img/background.png) no-repeat center
+    display: flex
+    height: 896px
+    justify-content: center
+    color: #fff
+    .header-wrapper
+        min-width: 1170px
+        border: 1px solid red
+        margin-top: 40px
+        .nav-wrapper
+            display: flex
+            justify-content: space-between
+            // min-width: 1170px
+            .section-header-logo
+                color: #fde428
+                font-size: 45px
+                font-weight: 700
+                &_subtile
+                    color: #fff
+                    font-size: 12px
+                    letter-spacing: 3.6px
+                    text-transform: uppercase
+            .section-header__nav
+                &-wrapper
+                    display: flex
+                    list-style: none
+                    min-width: 660px
+                    height: 32px
+                    justify-content: space-between
+                    align-items: center
+                    li
+                        a
+                            color: #fff 
+                            text-transform: uppercase 
+                            text-decoration: none
+                            font-size: 14px
+                            letter-spacing: 0.56px
+        .header-content-wrapper
+            display: flex
+            margin-top: 310px
+            justify-content: space-between
+            position: relative
+            .section-header__slider
+                display: flex
+                margin-top: 90px
+                height: 10px
+                width: 200px
+                align-items: center
+                color: #fde428
+                font-family: "Myriad Pro"
+                font-size: 12px
+                text-transform: uppercase
+                span
+                    display: inline-block
+                    margin-right: 20px
+                span:first-child, span:last-child
+                    font-size: 21px
+            .products
+                margin-right: 220px
+                width: 277px
+                color: #ffffff
+                font-family: Montserrat
+                font-size: 51px
+                font-weight: 700
+                line-height: 51px
+                .more
+                    height: 16px
+                    margin-top: 20px
+                    margin-left: 120px
+                    color: #fde428
+                    font-size: 21px
+                    font-weight: 700
+                    line-height: 50.97px
+                    text-transform: uppercase
+                    text-decoration: underline
+            .ring
+                position: absolute
+                right: 10px
+                top: -85px
 
-h1 
-    color: $color-secondary
+main
+    display: flex
+    justify-content: center
+    .body-wrapper
+        width: 1170px
+        display: flex
+        border: 4px solid red
+        &-inner
+            display: flex
+            // border: 5px solid brown
+            justify-content: space-between
+            .body-content
+                margin-top: 90px
+                &__title
+                    width: 480px
+                    color: #002e5b
+                    font-size: 31px
+                    font-weight: 700
+                    line-height: 31px
+                    text-transform: uppercase
+                &__subtitle
+                    margin-top: 25px
+                    width: 460px
+                    color: #666666
+                    font-family: "Segoe UI Emoji"
+                    font-size: 21px
+                    font-weight: 400
+                    line-height: 25px
+                &__main-text
+                    margin-top: 25px
+                    width: 580px
+                    height: 116px
+                    color: #333333
+                    font-family: "Segoe UI Emoji"
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 25px
+                &__more
+                    margin-top: 50px
+                    width: 120px
+                    color: #002e5b
+                    font-size: 16px
+                    font-weight: 700
+                    line-height: 25px
+                    text-transform: uppercase
+                    text-decoration: underline
+            .body-figures
+                position: relative
+                border: 1px solid green
+                // justify-self: flex-end
+                margin-right: auto
+                &__first
+                    margin: 0
+                    position: absolute
+                    top: 0
+                    left: 120px
+                    width: 270px
+                    height: 524px
+                    background-color: #fde428
+                &__second
+                    position: absolute
+                    top: 90px
+                    // left: 0px
+                    width: 499px
+                    height: 326px
+                    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3)
+                    background-color: #a1a1a1
+                    z-index: 1
+ 

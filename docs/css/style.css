@@ -1,13 +1,219 @@
-headerf {
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../fonts/MyriadPro-Regular.woff);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica-Rounded-LT-Black';
+  src: url("../fonts/Helvetica-Rounded-LT-Black.woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Segoe UI Emoji';
+  src: url("../fonts/seguiemj.woff");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Montserrat; }
+
+header {
+  background: url(../img/background.png) no-repeat center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  height: 896px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff; }
+  header .header-wrapper {
+    min-width: 1170px;
+    border: 1px solid red;
+    margin-top: 40px; }
+    header .header-wrapper .nav-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      header .header-wrapper .nav-wrapper .section-header-logo {
+        color: #fde428;
+        font-size: 45px;
+        font-weight: 700; }
+        header .header-wrapper .nav-wrapper .section-header-logo_subtile {
+          color: #fff;
+          font-size: 12px;
+          letter-spacing: 3.6px;
+          text-transform: uppercase; }
+      header .header-wrapper .nav-wrapper .section-header__nav-wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        list-style: none;
+        min-width: 660px;
+        height: 32px;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        header .header-wrapper .nav-wrapper .section-header__nav-wrapper li a {
+          color: #fff;
+          text-transform: uppercase;
+          text-decoration: none;
+          font-size: 14px;
+          letter-spacing: 0.56px; }
+    header .header-wrapper .header-content-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 310px;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      position: relative; }
+      header .header-wrapper .header-content-wrapper .section-header__slider {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 90px;
+        height: 10px;
+        width: 200px;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        color: #fde428;
+        font-family: "Myriad Pro";
+        font-size: 12px;
+        text-transform: uppercase; }
+        header .header-wrapper .header-content-wrapper .section-header__slider span {
+          display: inline-block;
+          margin-right: 20px; }
+        header .header-wrapper .header-content-wrapper .section-header__slider span:first-child, header .header-wrapper .header-content-wrapper .section-header__slider span:last-child {
+          font-size: 21px; }
+      header .header-wrapper .header-content-wrapper .products {
+        margin-right: 220px;
+        width: 277px;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 51px;
+        font-weight: 700;
+        line-height: 51px; }
+        header .header-wrapper .header-content-wrapper .products .more {
+          height: 16px;
+          margin-top: 20px;
+          margin-left: 120px;
+          color: #fde428;
+          font-size: 21px;
+          font-weight: 700;
+          line-height: 50.97px;
+          text-transform: uppercase;
+          text-decoration: underline; }
+      header .header-wrapper .header-content-wrapper .ring {
+        position: absolute;
+        right: 10px;
+        top: -85px; }
 
-body {
-  background-color: green; }
-
-h1 {
-  color: yellow; }
+main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  main .body-wrapper {
+    width: 1170px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border: 4px solid red; }
+    main .body-wrapper-inner {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      main .body-wrapper-inner .body-content {
+        margin-top: 90px; }
+        main .body-wrapper-inner .body-content__title {
+          width: 480px;
+          color: #002e5b;
+          font-size: 31px;
+          font-weight: 700;
+          line-height: 31px;
+          text-transform: uppercase; }
+        main .body-wrapper-inner .body-content__subtitle {
+          margin-top: 25px;
+          width: 460px;
+          color: #666666;
+          font-family: "Segoe UI Emoji";
+          font-size: 21px;
+          font-weight: 400;
+          line-height: 25px; }
+        main .body-wrapper-inner .body-content__main-text {
+          margin-top: 25px;
+          width: 580px;
+          height: 116px;
+          color: #333333;
+          font-family: "Segoe UI Emoji";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25px; }
+        main .body-wrapper-inner .body-content__more {
+          margin-top: 50px;
+          width: 120px;
+          color: #002e5b;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 25px;
+          text-transform: uppercase;
+          text-decoration: underline; }
+      main .body-wrapper-inner .body-figures {
+        position: relative;
+        border: 1px solid green;
+        margin-right: auto; }
+        main .body-wrapper-inner .body-figures__first {
+          margin: 0;
+          position: absolute;
+          top: 0;
+          left: 120px;
+          width: 270px;
+          height: 524px;
+          background-color: #fde428; }
+        main .body-wrapper-inner .body-figures__second {
+          position: absolute;
+          top: 90px;
+          width: 499px;
+          height: 326px;
+          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+          background-color: #a1a1a1;
+          z-index: 1; }
 
 /*# sourceMappingURL=style.css.map */
