@@ -38,7 +38,6 @@ header {
   color: #fff; }
   header .header-wrapper {
     min-width: 1170px;
-    border: 1px solid red;
     margin-top: 40px; }
     header .header-wrapper .nav-wrapper {
       display: -webkit-box;
@@ -145,75 +144,108 @@ main {
       -ms-flex-pack: center;
           justify-content: center; }
   main .body-wrapper {
-    width: 1170px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    border: 4px solid red; }
-    main .body-wrapper-inner {
+    width: 1170px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    main .body-wrapper .body-content__title {
+      margin-top: 100px;
+      width: 480px;
+      color: #002e5b;
+      font-size: 31px;
+      font-weight: 700;
+      line-height: 31px;
+      text-transform: uppercase; }
+    main .body-wrapper .body-content__subtitle {
+      margin-top: 25px;
+      width: 460px;
+      color: #666666;
+      font-family: "Segoe UI Emoji";
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 25px; }
+    main .body-wrapper .body-content__main-text {
+      margin-top: 25px;
+      width: 580px;
+      height: 116px;
+      color: #333333;
+      font-family: "Segoe UI Emoji";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25px; }
+    main .body-wrapper .body-content__more {
+      margin-top: 10px;
+      width: 120px;
+      color: #002e5b;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 25px;
+      text-transform: uppercase;
+      text-decoration: underline; }
+    main .body-wrapper .body-figures {
+      height: 530px;
+      width: 500px;
+      position: relative; }
+      main .body-wrapper .body-figures__first {
+        position: absolute;
+        left: 25%;
+        width: 270px;
+        height: 530px;
+        background-color: #fde428; }
+      main .body-wrapper .body-figures__second {
+        position: absolute;
+        top: 20%;
+        height: 326px;
+        width: 500px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+        background-color: #a1a1a1;
+        z-index: 1; }
+    main .body-wrapper .grafic {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      main .body-wrapper-inner .body-content {
-        margin-top: 90px; }
-        main .body-wrapper-inner .body-content__title {
-          width: 480px;
-          color: #002e5b;
-          font-size: 31px;
-          font-weight: 700;
-          line-height: 31px;
-          text-transform: uppercase; }
-        main .body-wrapper-inner .body-content__subtitle {
-          margin-top: 25px;
-          width: 460px;
-          color: #666666;
-          font-family: "Segoe UI Emoji";
-          font-size: 21px;
-          font-weight: 400;
-          line-height: 25px; }
-        main .body-wrapper-inner .body-content__main-text {
-          margin-top: 25px;
-          width: 580px;
-          height: 116px;
-          color: #333333;
-          font-family: "Segoe UI Emoji";
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 25px; }
-        main .body-wrapper-inner .body-content__more {
-          margin-top: 50px;
-          width: 120px;
-          color: #002e5b;
-          font-size: 16px;
-          font-weight: 700;
-          line-height: 25px;
-          text-transform: uppercase;
-          text-decoration: underline; }
-      main .body-wrapper-inner .body-figures {
-        position: relative;
-        border: 1px solid green;
-        margin-right: auto; }
-        main .body-wrapper-inner .body-figures__first {
-          margin: 0;
-          position: absolute;
-          top: 0;
-          left: 120px;
-          width: 270px;
-          height: 524px;
-          background-color: #fde428; }
-        main .body-wrapper-inner .body-figures__second {
-          position: absolute;
-          top: 90px;
-          width: 499px;
-          height: 326px;
-          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-          background-color: #a1a1a1;
-          z-index: 1; }
+      padding-top: 100px;
+      border: 1px solid red;
+      background-color: #f4f4f4; }
+      main .body-wrapper .grafic-content__title {
+        margin-top: 100px;
+        width: 480px;
+        color: #002e5b;
+        font-size: 31px;
+        font-weight: 700;
+        line-height: 31px;
+        text-transform: uppercase; }
+      main .body-wrapper .grafic-content__subtitle {
+        margin-top: 25px;
+        width: 460px;
+        color: #666666;
+        font-family: "Segoe UI Emoji";
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 25px; }
+      main .body-wrapper .grafic-content__main-text {
+        margin-top: 25px;
+        width: 580px;
+        height: 116px;
+        color: #333333;
+        font-family: "Segoe UI Emoji";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px; }
+      main .body-wrapper .grafic-content__more {
+        margin-top: 10px;
+        width: 120px;
+        color: #002e5b;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 25px;
+        text-transform: uppercase;
+        text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */

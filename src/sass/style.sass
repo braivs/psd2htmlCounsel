@@ -1,3 +1,4 @@
+// ===Fonts===
 @font-face 
     font-family: 'Myriad Pro' 
     src: url(../fonts/MyriadPro-Regular.woff)
@@ -13,15 +14,54 @@
     src: url('../fonts/seguiemj.woff')
     font-weight: normal
     font-style: normal
+// / ===Fonts===
 
-// === Vars ===
-// / === Vars ===
+// ===Common===
 *
     box-sizing: border-box
     margin: 0
     padding: 0
 body 
     font-family: Montserrat
+// / ===Common===
+
+// ===Mixins===
+@mixin title 
+    margin-top: 100px
+    width: 480px
+    color: #002e5b
+    font-size: 31px
+    font-weight: 700
+    line-height: 31px
+    text-transform: uppercase
+@mixin subtitle
+    margin-top: 25px
+    width: 460px
+    color: #666666
+    font-family: "Segoe UI Emoji"
+    font-size: 21px
+    font-weight: 400
+    line-height: 25px
+@mixin main-text
+    margin-top: 25px
+    width: 580px
+    height: 116px
+    color: #333333
+    font-family: "Segoe UI Emoji"
+    font-size: 16px
+    font-weight: 400
+    line-height: 25px
+@mixin more
+    margin-top: 10px
+    width: 120px
+    color: #002e5b
+    font-size: 16px
+    font-weight: 700
+    line-height: 25px
+    text-transform: uppercase
+    text-decoration: underline
+// / ===Mixins===
+
 header
     background: url(../img/background.png) no-repeat center
     display: flex
@@ -30,12 +70,10 @@ header
     color: #fff
     .header-wrapper
         min-width: 1170px
-        border: 1px solid red
         margin-top: 40px
         .nav-wrapper
             display: flex
             justify-content: space-between
-            // min-width: 1170px
             .section-header-logo
                 color: #fde428
                 font-size: 45px
@@ -107,68 +145,52 @@ main
     display: flex
     justify-content: center
     .body-wrapper
-        width: 1170px
         display: flex
-        border: 4px solid red
-        &-inner
+        width: 1170px
+        justify-content: space-between
+        // margin-top: 90px
+        .body-content
+            &__title
+                @include title
+            &__subtitle
+                @include subtitle
+            &__main-text
+                @include main-text
+                // display: block
+            &__more
+                @include more
+        .body-figures
+            height: 530px
+            width: 500px
+            position: relative
+            &__first
+                position: absolute
+                left: 25%
+                width: 270px
+                height: 530px
+                background-color: #fde428
+            &__second
+                position: absolute
+                top: 20%
+                height: 326px
+                width: 500px
+                box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3)
+                background-color: #a1a1a1
+                z-index: 1
+        .grafic
             display: flex
-            // border: 5px solid brown
-            justify-content: space-between
-            .body-content
-                margin-top: 90px
+            padding-top: 100px
+            border: 1px solid red
+            background-color: #f4f4f4
+            // width: 1170px
+            &-content
                 &__title
-                    width: 480px
-                    color: #002e5b
-                    font-size: 31px
-                    font-weight: 700
-                    line-height: 31px
-                    text-transform: uppercase
+                    @include title
                 &__subtitle
-                    margin-top: 25px
-                    width: 460px
-                    color: #666666
-                    font-family: "Segoe UI Emoji"
-                    font-size: 21px
-                    font-weight: 400
-                    line-height: 25px
+                    @include subtitle
                 &__main-text
-                    margin-top: 25px
-                    width: 580px
-                    height: 116px
-                    color: #333333
-                    font-family: "Segoe UI Emoji"
-                    font-size: 16px
-                    font-weight: 400
-                    line-height: 25px
+                    @include main-text
                 &__more
-                    margin-top: 50px
-                    width: 120px
-                    color: #002e5b
-                    font-size: 16px
-                    font-weight: 700
-                    line-height: 25px
-                    text-transform: uppercase
-                    text-decoration: underline
-            .body-figures
-                position: relative
-                border: 1px solid green
-                // justify-self: flex-end
-                margin-right: auto
-                &__first
-                    margin: 0
-                    position: absolute
-                    top: 0
-                    left: 120px
-                    width: 270px
-                    height: 524px
-                    background-color: #fde428
-                &__second
-                    position: absolute
-                    top: 90px
-                    // left: 0px
-                    width: 499px
-                    height: 326px
-                    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3)
-                    background-color: #a1a1a1
-                    z-index: 1
- 
+                    @include more
+
+
