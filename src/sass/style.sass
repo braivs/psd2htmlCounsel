@@ -26,8 +26,14 @@ body
 // / ===Common===
 
 // ===Mixins===
+@mixin outer-wrapper
+    display: flex
+    justify-content: center
+@mixin inner-wrapper
+    display: flex
+    width: 1170px
+    justify-content: space-between
 @mixin title 
-    margin-top: 100px
     width: 480px
     color: #002e5b
     font-size: 31px
@@ -45,7 +51,7 @@ body
 @mixin main-text
     margin-top: 25px
     width: 580px
-    height: 116px
+    height: auto
     color: #333333
     font-family: "Segoe UI Emoji"
     font-size: 16px
@@ -141,17 +147,17 @@ header
                 right: 10px
                 top: -85px
 
-main
+
+// ===First block===
+.firstBlock-outer-wrapper
     display: flex
     justify-content: center
-    .body-wrapper
-        display: flex
-        width: 1170px
-        justify-content: space-between
-        // margin-top: 90px
-        .body-content
+    .firstBlock-inner-wrapper
+        @include inner-wrapper
+        .firstBlock-content
             &__title
                 @include title
+                margin-top: 100px
             &__subtitle
                 @include subtitle
             &__main-text
@@ -159,7 +165,7 @@ main
                 // display: block
             &__more
                 @include more
-        .body-figures
+        .firstBlock-figures
             height: 530px
             width: 500px
             position: relative
@@ -177,20 +183,94 @@ main
                 box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3)
                 background-color: #a1a1a1
                 z-index: 1
-        .grafic
-            display: flex
-            padding-top: 100px
-            border: 1px solid red
-            background-color: #f4f4f4
-            // width: 1170px
-            &-content
-                &__title
-                    @include title
-                &__subtitle
-                    @include subtitle
-                &__main-text
-                    @include main-text
-                &__more
-                    @include more
+// / ===First block===
 
+// ===Grafic===
+section.grafic-outer-wrapper
+    display: flex
+    justify-content: center
+    background-color: #f4f4f4
+    .grafic-inner-wrapper
+        @include inner-wrapper
+        padding-top: 100px
+        padding-bottom: 100px
+        .grafic-img
+        .grafic-content
+            &__title
+                @include title
+            &__subtitle
+                @include subtitle
+            &__main-text
+                @include main-text
+            &__more
+                @include more
+// / ===Grafic===
+
+// ===Contact===
+.contact-outer-wrapper
+    display: flex
+    justify-content: center
+    background-color: #002e5b
+    padding: 30px 0
+    .contact-inner-wrapper
+        @include inner-wrapper
+        .contact-main-text
+            // width: 534px
+            height: auto
+            color: #ffffff
+            font-family: Montserrat
+            font-size: 21px
+            font-weight: 400
+            line-height: 51px
+        .contact-button
+            input
+                width: 161px
+                height: 44px
+                border: none
+                border-radius: 3px
+                background-color: #fde428
+                text-transform: uppercase
+                color: #002e5b
+                font-size: 16px
+                font-weight: 700
+// / ===Contact===
+
+/// ===Services===
+section.services-outer-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    .services-inner-wrapper__small
+        border: 1px soliad red
+        display: flex
+        width: auto
+        flex-direction: column
+        justify-content: space-between
+        .services-title
+            @include title
+            text-align: center
+        .services-subtitle
+            @include subtitle
+            width: auto
+            text-align: center
+    .services-inner-wrapper
+        @include inner-wrapper
+        .services-block
+            &__figure
+                width: 370px
+                height: 191px
+                background-color: #f49f77
+            &__title
+                @include title
+                font-size: 21px
+            &:first-child
+                .services-block__figure
+                    background-color: #69d2e7
+            &:nth-of-type(2)
+                .services-block__figure
+                    background-color: #add478
+            &:last-child
+            &__subtitle
+                @include subtitle
+/// / ===Services===
 
