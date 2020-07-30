@@ -291,9 +291,9 @@ section.grafic-outer-wrapper {
       font-weight: 400;
       line-height: 51px; }
     .contact-outer-wrapper .contact-inner-wrapper .contact-button input {
-      width: 161px;
       height: 44px;
       border: none;
+      width: 161px;
       border-radius: 3px;
       background-color: #fde428;
       text-transform: uppercase;
@@ -317,7 +317,6 @@ section.services-outer-wrapper {
       -ms-flex-align: center;
           align-items: center; }
   section.services-outer-wrapper .services-inner-wrapper__small {
-    border: 1px soliad red;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -459,7 +458,7 @@ section.best-outer-wrapper {
         background-color: #fde428; }
       section.best-outer-wrapper .best-inner-wrapper .best-figure__img {
         position: absolute;
-        top: 25%;
+        top: 20%;
         left: 25%;
         -webkit-transform: translateX(-25%);
             -ms-transform: translateX(-25%);
@@ -552,15 +551,15 @@ section.best-outer-wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 95px; }
   .map-outer-wrapper .map-outer-wrapper-small .title {
     width: 480px;
@@ -569,6 +568,7 @@ section.best-outer-wrapper {
     font-weight: 700;
     line-height: 31px;
     text-transform: uppercase;
+    width: auto;
     text-align: center; }
   .map-outer-wrapper .map-outer-wrapper-small .subtitle {
     margin-top: 25px;
@@ -580,5 +580,75 @@ section.best-outer-wrapper {
     line-height: 25px;
     width: auto;
     text-align: center; }
+  .map-outer-wrapper .map-inner-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1170px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 42px 0 100px; }
+    .map-outer-wrapper .map-inner-wrapper .map-block {
+      width: 370px;
+      height: 455px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07); }
+      .map-outer-wrapper .map-inner-wrapper .map-block__content {
+        padding-left: 37px; }
+        .map-outer-wrapper .map-inner-wrapper .map-block__content-title {
+          margin-top: 39px;
+          color: #002e5b;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 13.82px;
+          text-transform: uppercase; }
+        .map-outer-wrapper .map-inner-wrapper .map-block__content-contact {
+          margin-top: 15px;
+          color: #002e5b;
+          font-family: "Segoe UI Emoji";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21px;
+          width: 230px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex; }
+          .map-outer-wrapper .map-inner-wrapper .map-block__content-contact span {
+            margin-right: 25px; }
+          .map-outer-wrapper .map-inner-wrapper .map-block__content-contact:last-child span {
+            margin-left: -3px; }
+
+footer.footer-outer-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #002e5b; }
+  footer.footer-outer-wrapper .footer-inner-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1170px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 45px;
+    padding: 30px 0; }
+    footer.footer-outer-wrapper .footer-inner-wrapper .footer-content span {
+      margin-left: 5px;
+      color: #fde52c; }
+    footer.footer-outer-wrapper .footer-inner-wrapper .footer-icons span {
+      margin-right: 15px; }
 
 /*# sourceMappingURL=style.css.map */

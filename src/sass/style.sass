@@ -224,9 +224,9 @@ section.grafic-outer-wrapper
             line-height: 51px
         .contact-button
             input
-                width: 161px
                 height: 44px
                 border: none
+                width: 161px
                 border-radius: 3px
                 background-color: #fde428
                 text-transform: uppercase
@@ -242,7 +242,6 @@ section.services-outer-wrapper
     flex-direction: column
     align-items: center
     .services-inner-wrapper__small
-        border: 1px soliad red
         display: flex
         width: auto
         flex-direction: column
@@ -322,7 +321,7 @@ section.best-outer-wrapper
                 background-color: #fde428
             &__img
                 position: absolute
-                top: 25%
+                top: 20%
                 left: 25%
                 transform: translateX(-25%)
                 z-index: 1
@@ -369,21 +368,76 @@ section.best-outer-wrapper
 
 /// ===Map===
 .map-outer-wrapper
-    @include outer-wrapper
+    display: flex
+    // justify-content: center
     flex-direction: column
+    align-items: center
     padding-top: 95px
     .map-outer-wrapper-small
         .title
             @include title
+            width: auto
             text-align: center
         .subtitle
             @include subtitle
             width: auto
             text-align: center
-    // .inner-wrapper
-    //     @include inner-wrapper
-    //     .map-block
-    //         .map-block__img
-    //         .map-block__title
-    //         .map-block__contact
-/// / ===Map=== 
+    .map-inner-wrapper
+        display: flex
+        width: 1170px
+        justify-content: space-between
+        padding: 42px 0 100px
+        .map-block
+            width: 370px
+            height: 455px
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07)
+            &__img
+            &__content
+                padding-left: 37px
+                &-title
+                    margin-top: 39px
+                    color: #002e5b
+                    font-size: 16px
+                    font-weight: 700
+                    line-height: 13.82px
+                    text-transform: uppercase
+                &-contact
+                    margin-top: 15px
+                    color: #002e5b
+                    font-family: "Segoe UI Emoji"
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 21px
+                    width: 230px
+                    display: flex
+                    // justify-content: space-between
+                    // border: 1px solid green
+                    span 
+                        margin-right: 25px
+                    &:last-child
+                        span 
+                            margin-left: -3px
+// / ===Map=== 
+
+/// ===Footer===
+footer.footer-outer-wrapper
+    display: flex
+    justify-content: center
+    background-color: #002e5b 
+    .footer-inner-wrapper
+        display: flex
+        width: 1170px
+        justify-content: space-between
+        color: #ffffff
+        font-size: 16px
+        line-height: 45px
+        padding: 30px 0
+        .footer-content
+            span
+                margin-left: 5px
+                color: #fde52c
+        .footer-icons
+            span 
+                margin-right: 15px
+/// / ===Footer===
+    
