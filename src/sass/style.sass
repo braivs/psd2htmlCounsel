@@ -1,3 +1,5 @@
+@import  'media'
+    
 // ===Fonts===
 @font-face 
     font-family: 'Myriad Pro' 
@@ -16,6 +18,13 @@
     font-style: normal
 // / ===Fonts===
 
+// ===Vars===
+$titleFZ: 31px
+$subtitleFZ: 21px
+$main-textFZ: 16px
+$moreFZ: 16px
+// / ===Vars===
+
 // ===Common===
 *
     box-sizing: border-box
@@ -31,12 +40,11 @@ body
     justify-content: center
 @mixin inner-wrapper
     display: flex
-    width: 1170px
-    justify-content: space-between
+    justify-content: center
 @mixin title 
     width: 480px
     color: #002e5b
-    font-size: 31px
+    font-size: $titleFZ
     font-weight: 700
     line-height: 31px
     text-transform: uppercase
@@ -45,7 +53,7 @@ body
     width: 460px
     color: #666666
     font-family: "Segoe UI Emoji"
-    font-size: 21px
+    font-size: $subtitleFZ
     font-weight: 400
     line-height: 25px
 @mixin main-text
@@ -54,14 +62,14 @@ body
     height: auto
     color: #333333
     font-family: "Segoe UI Emoji"
-    font-size: 16px
+    font-size: $main-textFZ
     font-weight: 400
     line-height: 25px
 @mixin more
     margin-top: 10px
     width: auto
     color: #002e5b
-    font-size: 16px
+    font-size: $moreFZ
     font-weight: 700
     line-height: 25px
     text-transform: uppercase
@@ -74,8 +82,9 @@ header
     height: 896px
     justify-content: center
     color: #fff
+    padding: 0 50px
     .header-wrapper
-        min-width: 1170px
+        width: 1170px
         margin-top: 40px
         .nav-wrapper
             display: flex
@@ -146,8 +155,6 @@ header
                 position: absolute
                 right: 10px
                 top: -85px
-
-
 // ===First block===
 .firstBlock-outer-wrapper
     display: flex
@@ -155,34 +162,19 @@ header
     .firstBlock-inner-wrapper
         @include inner-wrapper
         .firstBlock-content
+            display: flex
+            flex-direction: column
             &__title
                 @include title
-                margin-top: 100px
+                padding-top: 100px
             &__subtitle
                 @include subtitle
             &__main-text
                 @include main-text
-                // display: block
             &__more
                 @include more
         .firstBlock-figures
-            height: 530px
-            width: 500px
-            position: relative
-            &__first
-                position: absolute
-                left: 25%
-                width: 270px
-                height: 530px
-                background-color: #fde428
-            &__second
-                position: absolute
-                top: 20%
-                height: 326px
-                width: 500px
-                box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3)
-                background-color: #a1a1a1
-                z-index: 1
+            display: flex
 // / ===First block===
 
 // ===Grafic===
@@ -195,6 +187,7 @@ section.grafic-outer-wrapper
         padding-top: 100px
         padding-bottom: 100px
         .grafic-img
+            margin-right: 70px
         .grafic-content
             &__title
                 @include title
@@ -222,6 +215,7 @@ section.grafic-outer-wrapper
             font-size: 21px
             font-weight: 400
             line-height: 51px
+            margin-right: 470px
         .contact-button
             input
                 height: 44px
@@ -245,7 +239,7 @@ section.services-outer-wrapper
         display: flex
         width: auto
         flex-direction: column
-        justify-content: space-between
+        justify-content: center
         padding: 100px 0 40px
         .services-title
             @include title
@@ -255,16 +249,27 @@ section.services-outer-wrapper
             width: auto
             text-align: center
     .services-inner-wrapper
-        @include inner-wrapper
+        display: flex
+        justify-content: center
         .services-block
+            width: 370px
+            height: auto
+            display: flex
+            flex-direction: column
+            margin-right: 30px
             &__figure
-                width: 370px
-                height: 191px
+                width: auto
+                height: 190px
                 background-color: #f49f77
             &__title
                 @include title
+                width: auto
                 font-size: 21px
                 padding-top: 35px
+            &__subtitle
+                @include subtitle
+                display: flex
+                width: auto
             &:first-child
                 .services-block__figure
                     background-color: #69d2e7
@@ -272,11 +277,9 @@ section.services-outer-wrapper
                 .services-block__figure
                     background-color: #add478
             &:last-child
-            &__subtitle
-                @include subtitle
 /// / ===Services===
 
-/// ===Couters===
+/// ===Counters===
 .counters-outer-wrapper
     @include outer-wrapper
     background-color: #002e5b
@@ -285,6 +288,7 @@ section.services-outer-wrapper
         @include inner-wrapper
         .counter-block
             padding: 120px 0
+            margin-right: 185px
             .counter-block__title
                 width: 152px
                 height: 36px
@@ -311,22 +315,14 @@ section.best-outer-wrapper
     .best-inner-wrapper
         @include inner-wrapper
         .best-figure
-            position: relative
-            height: 530px
-            &__first
-                position: absolute
-                left: 25%
-                width: 270px
-                height: 530px
-                background-color: #fde428
-            &__img
-                position: absolute
-                top: 20%
-                left: 25%
-                transform: translateX(-25%)
-                z-index: 1
+            // height: 530px
+            // width: 513px
+            // margin-right: 100px
+            display: flex
         .best-content
-            padding-top: 95px
+            padding-top: 100px
+            z-index: 2
+            margin-left: 100px
             &__title
                 @include title
             &__subtitile
@@ -345,6 +341,7 @@ section.best-outer-wrapper
     .quote-inner-wrapper
         @include inner-wrapper
         flex-direction: column
+        max-width: 900px
         .quote__title
             color: #ffffff
             font-family: "Helvetica Rounded LT - Black"
@@ -384,13 +381,14 @@ section.best-outer-wrapper
             text-align: center
     .map-inner-wrapper
         display: flex
-        width: 1170px
-        justify-content: space-between
+        // width: 1170px
+        justify-content: center
         padding: 42px 0 100px
         .map-block
             width: 370px
             height: 455px
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07)
+            margin-right: 30px
             &__img
             &__content
                 padding-left: 37px
@@ -426,13 +424,13 @@ footer.footer-outer-wrapper
     background-color: #002e5b 
     .footer-inner-wrapper
         display: flex
-        width: 1170px
-        justify-content: space-between
+        justify-content: center
         color: #ffffff
         font-size: 16px
         line-height: 45px
         padding: 30px 0
         .footer-content
+            margin-right: 870px
             span
                 margin-left: 5px
                 color: #fde52c
@@ -440,4 +438,6 @@ footer.footer-outer-wrapper
             span 
                 margin-right: 15px
 /// / ===Footer===
+
+@import  'media'
     

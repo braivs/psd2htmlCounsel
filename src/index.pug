@@ -5,10 +5,12 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/normalize.css")
         link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/media.css")
         link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
         link(href!="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap", rel="stylesheet",)
-        title Canvas
+        title Counsel
     body
+        // ===header===
         header
             .header-wrapper
                 .nav-wrapper
@@ -48,7 +50,10 @@ html(lang="en")
                             | LEARN MORE
                     section.ring
                         img(src="img/ring.png", alt="")
+        // / ===header===
+
         main
+            /// ===First block===            
             .firstBlock-outer-wrapper
                 .firstBlock-inner-wrapper
                     .firstBlock-content
@@ -64,9 +69,10 @@ html(lang="en")
                         .firstBlock-content__more
                             |Take a Tour
                     .firstBlock-figures
-                        .firstBlock-figures__first
-                        .firstBlock-figures__second
+                        img(src="img/firstBlockImg.png", alt="")
+            /// / ===First block===  
 
+            // ===Grafic===
             section.grafic-outer-wrapper
                 .grafic-inner-wrapper
                     .grafic-img
@@ -80,14 +86,18 @@ html(lang="en")
                             |Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. 
                         .grafic-content__more
                             |Take a Tour
+            // / ===Grafic===
             
+            // ===Contact===
             section.contact-outer-wrapper
                 .contact-inner-wrapper
                     .contact-main-text
                         |Looking for a First-Class Business Plan Consultant?
                     .contact-button
                         input(type="button", value="Contact Now")
+            // / ===Contact===
 
+            /// ===Services===
             section.services-outer-wrapper
                 .services-inner-wrapper__small
                     .services-title
@@ -113,7 +123,9 @@ html(lang="en")
                             |Audit & Assurance
                         .services-block__subtitle
                             |Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.
+            /// / ===Services===        
 
+            /// ===Couters===
             section.counters-outer-wrapper
                 .counters-inner-wrapper
                     .counter-block
@@ -128,13 +140,13 @@ html(lang="en")
                     .counter-block
                         .counter-block__title 5972
                         .counter-block__subtitle purchases
-            
+            /// / ===Counters===
+
+            // ===Best ===            
             section.best-outer-wrapper
                 .best-inner-wrapper
                     .best-figure
-                        .best-figure__first
-                        .best-figure__img
-                            img(src="img/player.png", alt="")
+                        img(src="img/player.png", alt="")
                     .best-content
                         .best-content__title
                             |Why  we best Consulting 
@@ -146,6 +158,7 @@ html(lang="en")
                             |justo sapien, tempus 
                         .best-content__more
                             |Our services
+            // / ===Best===
             
             section.quote-outer-wrapper.quote
                 .quote-inner-wrapper
@@ -156,6 +169,7 @@ html(lang="en")
                         |Voluptate velit esse cillum dolore eu fugiat nullapariatur.
                     .quote__subtitle SAM ISBISTER
             
+            /// ===Map===
             section.map-outer-wrapper.map
                 .map-outer-wrapper-small
                     .title Contact with us
@@ -227,7 +241,7 @@ html(lang="en")
                                     i.fas.fa-envelope
                                 span
                                     |+445 6231 411
-                                
+            /// / ===Map===
 
         footer.footer-outer-wrapper
             .footer-inner-wrapper
