@@ -32,13 +32,13 @@
     margin-left: 100px; }
     .counters-outer-wrapper .counters-inner-wrapper .counter-block {
       margin-right: 100px; }
-  section.best-outer-wrapper .best-inner-wrapper {
-    padding-left: 100px; }
+  section.best-outer-wrapper .best-inner-wrapper .best-figure {
+    margin-right: 20px; }
     section.best-outer-wrapper .best-inner-wrapper .best-figure img {
       width: 347.9px;
       height: 367.5px; }
-    section.best-outer-wrapper .best-inner-wrapper .best-content {
-      padding-top: 50px; }
+  section.best-outer-wrapper .best-inner-wrapper .best-content {
+    padding-top: 50px; }
   .map-outer-wrapper .map-inner-wrapper {
     width: 800px; }
     .map-outer-wrapper .map-inner-wrapper .map-block {
@@ -464,6 +464,7 @@ section.services-outer-wrapper {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 100vw;
   background-color: #002e5b;
   margin-top: 100px; }
   .counters-outer-wrapper .counters-inner-wrapper {
@@ -505,7 +506,8 @@ section.best-outer-wrapper {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  max-width: 100vw; }
   section.best-outer-wrapper .best-inner-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -519,11 +521,11 @@ section.best-outer-wrapper {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      margin-right: 100px; }
     section.best-outer-wrapper .best-inner-wrapper .best-content {
       padding-top: 100px;
-      z-index: 2;
-      margin-left: 100px; }
+      z-index: 2; }
       section.best-outer-wrapper .best-inner-wrapper .best-content__title {
         width: 480px;
         color: #002e5b;
@@ -567,6 +569,7 @@ section.best-outer-wrapper {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 100vw;
   background-color: #002e5b;
   padding: 120px 0; }
   .quote-outer-wrapper .quote-inner-wrapper {
@@ -744,13 +747,13 @@ footer.footer-outer-wrapper {
     margin-left: 100px; }
     .counters-outer-wrapper .counters-inner-wrapper .counter-block {
       margin-right: 100px; }
-  section.best-outer-wrapper .best-inner-wrapper {
-    padding-left: 100px; }
+  section.best-outer-wrapper .best-inner-wrapper .best-figure {
+    margin-right: 20px; }
     section.best-outer-wrapper .best-inner-wrapper .best-figure img {
       width: 347.9px;
       height: 367.5px; }
-    section.best-outer-wrapper .best-inner-wrapper .best-content {
-      padding-top: 50px; }
+  section.best-outer-wrapper .best-inner-wrapper .best-content {
+    padding-top: 50px; }
   .map-outer-wrapper .map-inner-wrapper {
     width: 800px; }
     .map-outer-wrapper .map-inner-wrapper .map-block {
