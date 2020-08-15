@@ -192,3 +192,76 @@
             .footer-content
                 margin-right: 350px
     /// / ===Footer===
+
+// 576px - 768px
+@media (max-width: 768px)
+    header
+        .nav-wrapper
+            .section-header__nav
+                &-wrapper
+                    flex-direction: column
+                    li:not(:first-child)
+                        margin-top: 10px 
+    
+    // ===First block===
+    .firstBlock-outer-wrapper
+        .firstBlock-inner-wrapper
+            padding-left: 50px
+            .firstBlock-content
+                &__title
+                &__more
+            .firstBlock-figures
+    // / ===First block===
+
+    // ===Grafic===
+    section.grafic-outer-wrapper
+        .grafic-inner-wrapper
+            margin-left: 50px 
+    // / ===Grafic===
+
+    // ===Contact===
+    .contact-outer-wrapper
+        .contact-inner-wrapper
+            flex-direction: column
+            align-items: center
+            .contact-main-text
+                margin-right: 0
+                margin-bottom: 20px
+    // / ===Contact===
+
+    /// === Services ===
+    section.services-outer-wrapper
+        .services-inner-wrapper__small
+            padding: 25px 0 40px
+        .services-inner-wrapper
+            display: grid
+            grid-template-columns: auto
+            row-gap: 20px
+    /// / === Services ===
+
+    /// ===Counters===
+    .counters-outer-wrapper
+        margin-top: 25px
+        .counters-inner-wrapper
+            margin-left: 0
+            flex-direction: column
+            .counter-block
+                padding: 0px 0
+                margin-right: 0
+                .counter-block__subtitle
+                    margin-top: 5px
+
+    /// / ===Counters===
+
+    /// ===Map===
+    .map-outer-wrapper
+        .map-inner-wrapper
+            grid-template-columns: auto 
+    /// / ===Map===
+
+    /// ===Footer===
+    footer.footer-outer-wrapper
+        .footer-inner-wrapper
+            .footer-content
+                margin-right: 250px
+    /// / ===Footer===
