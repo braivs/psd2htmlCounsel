@@ -1,6 +1,6 @@
 // $screen-sm: 576px
 // $screen-md: 768px
-// $screen-lg: 992px
+
 @media (max-width: 1400px)
     /// ===Counters===
     .counters-outer-wrapper
@@ -97,4 +97,98 @@
         .footer-inner-wrapper
             .footer-content
                 margin-right: 650px
+    /// / ===Footer===
+
+// 992px - 768px
+@media (max-width: 992px)
+    header
+        .nav-wrapper
+            flex-direction: column
+            .section-header__nav
+                padding-top: 25px
+
+
+    // ===First block===
+    .firstBlock-outer-wrapper
+        .firstBlock-inner-wrapper
+            display: grid 
+            grid-template-columns: auto
+            .firstBlock-content
+                order: 2
+                &__title
+                    padding-top: 25px
+                &__more
+                    padding-bottom: 25px
+            .firstBlock-figures
+                padding-top: 25px
+                order: 1
+    // / ===First block===
+
+    // ===Grafic===
+    section.grafic-outer-wrapper
+        .grafic-inner-wrapper
+            padding-top: 50px
+            padding-bottom: 50px
+            display: grid
+            grid-template-columns: auto
+            row-gap: 25px
+    // / ===Grafic===
+
+    // ===Contact===
+    .contact-outer-wrapper
+        .contact-inner-wrapper
+            .contact-main-text
+                margin-right: 30px
+    // / ===Contact===
+
+    /// === Services ===
+    section.services-outer-wrapper
+        .services-inner-wrapper__small
+            padding: 50px 0 40px
+        .services-inner-wrapper
+            display: grid
+            grid-template-columns: auto auto
+            row-gap: 30px
+    /// / === Services ===
+
+    /// ===Counters===
+    .counters-outer-wrapper
+        margin-top: 50px
+        .counters-inner-wrapper
+            margin-left: 30px
+            .counter-block
+                padding: 60px 0
+                margin-right: 30px
+    /// / ===Counters===
+
+    // ===Best===
+    section.best-outer-wrapper
+        .best-inner-wrapper
+            display: grid
+            grid-template-columns: auto
+            padding: 50px 0
+            .best-content
+                padding-top: 25px
+    /// / ===Best===
+
+    // ===Quote===
+    .quote-outer-wrapper
+        padding: 60px 30px
+    // / ===Quote===
+
+    /// ===Map===
+    .map-outer-wrapper
+        padding-top: 50px
+        .map-inner-wrapper
+            display: grid
+            grid-template-columns: auto auto
+            row-gap: 30px
+            padding: 42px 0 50px
+    /// / ===Map===
+
+    /// ===Footer===
+    footer.footer-outer-wrapper
+        .footer-inner-wrapper
+            .footer-content
+                margin-right: 350px
     /// / ===Footer===
