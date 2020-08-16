@@ -118,16 +118,25 @@
     margin-right: 350px; } }
 
 @media (max-width: 768px) {
-  header .nav-wrapper {
+  header .header-wrapper .nav-wrapper {
     text-align: center; }
-    header .nav-wrapper .section-header__nav-wrapper {
+    header .header-wrapper .nav-wrapper .section-header__nav-wrapper {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
-      header .nav-wrapper .section-header__nav-wrapper li:not(:first-child) {
+      header .header-wrapper .nav-wrapper .section-header__nav-wrapper li:not(:first-child) {
         margin-top: 10px; }
+  header .header-wrapper .header-content-wrapper {
+    display: grid;
+    margin-left: 100px;
+    margin-top: 210px; }
+    header .header-wrapper .header-content-wrapper .section-header__slider {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1; }
   .firstBlock-outer-wrapper .firstBlock-inner-wrapper {
     padding-left: 50px; }
   section.grafic-outer-wrapper .grafic-inner-wrapper {
@@ -265,9 +274,7 @@ header {
       -webkit-box-pack: justify;
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
-              justify-content: space-between;
-      position: relative;
-      border: 3px solid red; }
+              justify-content: space-between; }
       header .header-wrapper .header-content-wrapper .section-header__slider {
         display: -webkit-box;
         display: -webkit-flex;
@@ -290,27 +297,30 @@ header {
         header .header-wrapper .header-content-wrapper .section-header__slider span:first-child, header .header-wrapper .header-content-wrapper .section-header__slider span:last-child {
           font-size: 21px; }
       header .header-wrapper .header-content-wrapper .products {
-        margin-right: 220px;
-        width: 277px;
-        color: #ffffff;
-        font-family: Montserrat;
-        font-size: 51px;
-        font-weight: 700;
-        line-height: 51px; }
-        header .header-wrapper .header-content-wrapper .products .more {
-          height: 16px;
-          margin-top: 20px;
-          margin-left: 120px;
-          color: #fde428;
-          font-size: 21px;
+        height: 400px;
+        width: 500px;
+        position: relative; }
+        header .header-wrapper .header-content-wrapper .products-main {
+          position: absolute;
+          color: #ffffff;
+          font-family: Montserrat;
+          font-size: 51px;
           font-weight: 700;
-          line-height: 50.97px;
-          text-transform: uppercase;
-          text-decoration: underline; }
-      header .header-wrapper .header-content-wrapper .ring {
-        position: absolute;
-        right: 10px;
-        top: -85px; }
+          line-height: 51px;
+          top: 85px; }
+          header .header-wrapper .header-content-wrapper .products-main .more {
+            height: 16px;
+            margin-top: 20px;
+            margin-left: 120px;
+            color: #fde428;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 50.97px;
+            text-transform: uppercase;
+            text-decoration: underline; }
+        header .header-wrapper .header-content-wrapper .products-ring {
+          position: absolute;
+          right: 10px; }
 
 .firstBlock-outer-wrapper {
   display: -webkit-box;
@@ -965,16 +975,25 @@ footer.footer-outer-wrapper {
     margin-right: 350px; } }
 
 @media (max-width: 768px) {
-  header .nav-wrapper {
+  header .header-wrapper .nav-wrapper {
     text-align: center; }
-    header .nav-wrapper .section-header__nav-wrapper {
+    header .header-wrapper .nav-wrapper .section-header__nav-wrapper {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
-      header .nav-wrapper .section-header__nav-wrapper li:not(:first-child) {
+      header .header-wrapper .nav-wrapper .section-header__nav-wrapper li:not(:first-child) {
         margin-top: 10px; }
+  header .header-wrapper .header-content-wrapper {
+    display: grid;
+    margin-left: 100px;
+    margin-top: 210px; }
+    header .header-wrapper .header-content-wrapper .section-header__slider {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1; }
   .firstBlock-outer-wrapper .firstBlock-inner-wrapper {
     padding-left: 50px; }
   section.grafic-outer-wrapper .grafic-inner-wrapper {

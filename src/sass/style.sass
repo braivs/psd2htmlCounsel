@@ -91,7 +91,6 @@ header
         .nav-wrapper
             display: flex
             justify-content: space-between
-            // width: 100vw
             .section-header-logo
                 color: #fde428
                 font-size: 45px
@@ -120,8 +119,6 @@ header
             display: flex
             margin-top: 310px
             justify-content: space-between
-            position: relative
-            border: 3px solid red
             .section-header__slider
                 display: flex
                 margin-top: 90px
@@ -138,27 +135,31 @@ header
                 span:first-child, span:last-child
                     font-size: 21px
             .products
-                margin-right: 220px
-                width: 277px
-                color: #ffffff
-                font-family: Montserrat
-                font-size: 51px
-                font-weight: 700
-                line-height: 51px
-                .more
-                    height: 16px
-                    margin-top: 20px
-                    margin-left: 120px
-                    color: #fde428
-                    font-size: 21px
+                height: 400px
+                width: 500px
+                position: relative
+                &-main
+                    position: absolute
+                    color: #ffffff
+                    font-family: Montserrat
+                    font-size: 51px
                     font-weight: 700
-                    line-height: 50.97px
-                    text-transform: uppercase
-                    text-decoration: underline
-            .ring
-                position: absolute
-                right: 10px
-                top: -85px
+                    line-height: 51px
+                    top: 85px
+                    .more
+                        height: 16px
+                        margin-top: 20px
+                        margin-left: 120px
+                        color: #fde428
+                        font-size: 21px
+                        font-weight: 700
+                        line-height: 50.97px
+                        text-transform: uppercase
+                        text-decoration: underline
+                &-ring
+                    position: absolute
+                    right: 10px
+                    // top: -85px
 
 // ===First block===
 .firstBlock-outer-wrapper

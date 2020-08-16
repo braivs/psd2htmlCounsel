@@ -196,22 +196,26 @@
 // 576px - 768px
 @media (max-width: 768px)
     header
-        .nav-wrapper
-            text-align: center
-            .section-header__nav
-                &-wrapper
-                    flex-direction: column
-                    li:not(:first-child)
-                        margin-top: 10px 
+        .header-wrapper
+            .nav-wrapper
+                text-align: center
+                .section-header__nav
+                    &-wrapper
+                        flex-direction: column
+                        li:not(:first-child)
+                            margin-top: 10px
+            .header-content-wrapper
+                display: grid
+                margin-left: 100px
+                margin-top: 210px
+                .section-header__slider
+                    order: 1
+
     
     // ===First block===
     .firstBlock-outer-wrapper
         .firstBlock-inner-wrapper
             padding-left: 50px
-            .firstBlock-content
-                &__title
-                &__more
-            .firstBlock-figures
     // / ===First block===
 
     // ===Grafic===
