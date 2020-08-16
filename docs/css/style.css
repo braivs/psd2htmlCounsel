@@ -118,18 +118,22 @@
     margin-right: 350px; } }
 
 @media (max-width: 768px) {
-  header .nav-wrapper .section-header__nav-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    header .nav-wrapper .section-header__nav-wrapper li:not(:first-child) {
-      margin-top: 10px; }
+  header .nav-wrapper {
+    text-align: center; }
+    header .nav-wrapper .section-header__nav-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      header .nav-wrapper .section-header__nav-wrapper li:not(:first-child) {
+        margin-top: 10px; }
   .firstBlock-outer-wrapper .firstBlock-inner-wrapper {
     padding-left: 50px; }
   section.grafic-outer-wrapper .grafic-inner-wrapper {
     margin-left: 50px; }
+    section.grafic-outer-wrapper .grafic-inner-wrapper .grafic-content__main-text {
+      width: inherit; }
   .contact-outer-wrapper .contact-inner-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -163,6 +167,8 @@
         margin-right: 0; }
         .counters-outer-wrapper .counters-inner-wrapper .counter-block .counter-block__subtitle {
           margin-top: 5px; }
+  section.best-outer-wrapper .best-inner-wrapper {
+    margin-left: 50px; }
   .map-outer-wrapper .map-inner-wrapper {
     grid-template-columns: auto; }
   footer.footer-outer-wrapper .footer-inner-wrapper .footer-content {
@@ -260,7 +266,8 @@ header {
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      position: relative; }
+      position: relative;
+      border: 3px solid red; }
       header .header-wrapper .header-content-wrapper .section-header__slider {
         display: -webkit-box;
         display: -webkit-flex;
@@ -322,7 +329,8 @@ header {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    width: inherit; }
     .firstBlock-outer-wrapper .firstBlock-inner-wrapper .firstBlock-content {
       display: -webkit-box;
       display: -webkit-flex;
@@ -392,6 +400,7 @@ section.grafic-outer-wrapper {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: inherit;
     padding-top: 100px;
     padding-bottom: 100px; }
     section.grafic-outer-wrapper .grafic-inner-wrapper .grafic-img {
@@ -421,8 +430,7 @@ section.grafic-outer-wrapper {
         font-family: "Segoe UI Emoji";
         font-size: 16px;
         font-weight: 400;
-        line-height: 25px;
-        width: inherit; }
+        line-height: 25px; }
       section.grafic-outer-wrapper .grafic-inner-wrapper .grafic-content__more {
         margin-top: 10px;
         width: auto;
@@ -452,7 +460,8 @@ section.grafic-outer-wrapper {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    width: inherit; }
     .contact-outer-wrapper .contact-inner-wrapper .contact-main-text {
       height: auto;
       color: #ffffff;
@@ -595,7 +604,8 @@ section.services-outer-wrapper {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    width: inherit; }
     .counters-outer-wrapper .counters-inner-wrapper .counter-block {
       padding: 120px 0;
       margin-right: 185px; }
@@ -636,7 +646,8 @@ section.best-outer-wrapper {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    width: inherit; }
     section.best-outer-wrapper .best-inner-wrapper .best-figure {
       display: -webkit-box;
       display: -webkit-flex;
@@ -701,6 +712,7 @@ section.best-outer-wrapper {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: inherit;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -953,18 +965,22 @@ footer.footer-outer-wrapper {
     margin-right: 350px; } }
 
 @media (max-width: 768px) {
-  header .nav-wrapper .section-header__nav-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    header .nav-wrapper .section-header__nav-wrapper li:not(:first-child) {
-      margin-top: 10px; }
+  header .nav-wrapper {
+    text-align: center; }
+    header .nav-wrapper .section-header__nav-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      header .nav-wrapper .section-header__nav-wrapper li:not(:first-child) {
+        margin-top: 10px; }
   .firstBlock-outer-wrapper .firstBlock-inner-wrapper {
     padding-left: 50px; }
   section.grafic-outer-wrapper .grafic-inner-wrapper {
     margin-left: 50px; }
+    section.grafic-outer-wrapper .grafic-inner-wrapper .grafic-content__main-text {
+      width: inherit; }
   .contact-outer-wrapper .contact-inner-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -998,6 +1014,8 @@ footer.footer-outer-wrapper {
         margin-right: 0; }
         .counters-outer-wrapper .counters-inner-wrapper .counter-block .counter-block__subtitle {
           margin-top: 5px; }
+  section.best-outer-wrapper .best-inner-wrapper {
+    margin-left: 50px; }
   .map-outer-wrapper .map-inner-wrapper {
     grid-template-columns: auto; }
   footer.footer-outer-wrapper .footer-inner-wrapper .footer-content {

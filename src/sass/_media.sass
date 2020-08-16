@@ -197,6 +197,7 @@
 @media (max-width: 768px)
     header
         .nav-wrapper
+            text-align: center
             .section-header__nav
                 &-wrapper
                     flex-direction: column
@@ -217,6 +218,10 @@
     section.grafic-outer-wrapper
         .grafic-inner-wrapper
             margin-left: 50px 
+            .grafic-content
+                &__main-text
+                    width: inherit
+                
     // / ===Grafic===
 
     // ===Contact===
@@ -252,6 +257,14 @@
                     margin-top: 5px
 
     /// / ===Counters===
+
+    // ===Best ===            
+    section.best-outer-wrapper
+        .best-inner-wrapper
+            // border: 3px solid red
+            margin-left: 50px
+            .best-figure
+    // / ===Best ===
 
     /// ===Map===
     .map-outer-wrapper

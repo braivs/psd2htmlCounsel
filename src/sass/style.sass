@@ -42,6 +42,7 @@ body
 @mixin inner-wrapper
     display: flex
     justify-content: center
+    width: inherit
 @mixin title 
     width: 480px
     color: #002e5b
@@ -90,6 +91,7 @@ header
         .nav-wrapper
             display: flex
             justify-content: space-between
+            // width: 100vw
             .section-header-logo
                 color: #fde428
                 font-size: 45px
@@ -119,6 +121,7 @@ header
             margin-top: 310px
             justify-content: space-between
             position: relative
+            border: 3px solid red
             .section-header__slider
                 display: flex
                 margin-top: 90px
@@ -198,7 +201,7 @@ section.grafic-outer-wrapper
                 @include subtitle
             &__main-text
                 @include main-text
-                width: inherit
+                // width: inherit
             &__more
                 @include more
 // / ===Grafic===
