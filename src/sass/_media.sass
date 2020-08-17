@@ -362,26 +362,35 @@
                 span 
     /// / ===Footer===
 
-// @media (max-width: 375px)
-//     header
-//         // margin-right: 0
-//         width: 100vw
-//         .header-wrapper
-//             // border: 5px solid red
-//             width: 375px
-//             .nav-wrapper
-//                 .section-header-logo
-//                     &_subtile
-//                 .section-header__nav
-//                     &-wrapper
-//                         li
-//                             a
-//             .header-content-wrapper
-//                 .section-header__slider
-//                     span
-//                     span:first-child, span:last-child
-//                 .products
-//                     &-main
-//                         .more
-//                     &-ring
+@media (max-width: 375px)
+    header
+        .header-wrapper
+            .nav-wrapper
+                .section-header-logo
+                    &_subtile
+                .section-header__nav
+                    &-wrapper
+                        li
+                            margin-right: 0
+                            a
+            .header-content-wrapper
+                .section-header__slider
+                    span
+                    span:first-child, span:last-child
+                .products
+                    width: 250px //!
+                    &-main
+                        font-size: 25px //!
+                        top: 55px
+                        line-height: 35px
+                        .more
+                            font-size: 16px
+                            line-height: 5px
+                            margin-top: 35px
+                            margin-left: 25px
+                    &-ring
+                        right: 0px
+                        img
+                            width: 299px*0.7
+                            height: 378px*0.7
 
