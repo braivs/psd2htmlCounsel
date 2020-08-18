@@ -774,17 +774,35 @@ footer.footer-outer-wrapper {
           margin-top: 5px; }
   section.best-outer-wrapper .best-inner-wrapper {
     margin-left: 50px; }
+  .map-outer-wrapper .map-outer-wrapper-small {
+    max-width: 576px; }
+    .map-outer-wrapper .map-outer-wrapper-small .title {
+      max-width: inherit; }
+    .map-outer-wrapper .map-outer-wrapper-small .subtitle {
+      max-width: inherit; }
   .map-outer-wrapper .map-inner-wrapper {
+    max-width: 576px;
     grid-template-columns: auto; }
+    .map-outer-wrapper .map-inner-wrapper .map-block__img {
+      max-width: inherit; }
+    .map-outer-wrapper .map-inner-wrapper .map-block__content {
+      max-width: inherit; }
   footer.footer-outer-wrapper .footer-inner-wrapper .footer-content {
     margin-right: 250px; } }
 
 @media (max-width: 576px) {
-  header .header-wrapper .header-content-wrapper .products-ring {
-    right: 60px; }
-    header .header-wrapper .header-content-wrapper .products-ring img {
-      width: 239.2px;
-      height: 378px; }
+  .common-title {
+    width: 450px;
+    font-size: 20px; }
+  header .header-wrapper .nav-wrapper .section-header__nav-wrapper li {
+    margin-right: 0; }
+  header .header-wrapper .header-content-wrapper .products {
+    width: 450px; }
+    header .header-wrapper .header-content-wrapper .products-ring {
+      right: 60px; }
+      header .header-wrapper .header-content-wrapper .products-ring img {
+        width: 239.2px;
+        height: 378px; }
   .firstBlock-outer-wrapper .firstBlock-inner-wrapper {
     padding-left: 0; }
     .firstBlock-outer-wrapper .firstBlock-inner-wrapper .firstBlock-content {
@@ -821,10 +839,22 @@ footer.footer-outer-wrapper {
         max-width: inherit; }
       section.best-outer-wrapper .best-inner-wrapper .best-content__more {
         max-width: inherit; }
+  .map-outer-wrapper .map-outer-wrapper-small {
+    max-width: 450px; }
+    .map-outer-wrapper .map-outer-wrapper-small .title {
+      max-width: inherit; }
+    .map-outer-wrapper .map-outer-wrapper-small .subtitle {
+      max-width: inherit; }
+  .map-outer-wrapper .map-inner-wrapper {
+    max-width: 450px; }
+    .map-outer-wrapper .map-inner-wrapper .map-block__img {
+      max-width: inherit; }
+    .map-outer-wrapper .map-inner-wrapper .map-block__content {
+      max-width: inherit; }
   footer.footer-outer-wrapper .footer-inner-wrapper .footer-content {
     margin-right: 100px; } }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .common-title {
     width: 280px;
     font-size: 20px; }
