@@ -363,6 +363,14 @@
     /// / ===Footer===
 
 @media (max-width: 375px)
+    .common-outer-wrapper
+    .common-inner-wrapper
+    .common-title
+        width: 280px
+        font-size: 20px
+    .common-subtitle
+    .common-main-text
+    .common-more
     header
         .header-wrapper
             .nav-wrapper
@@ -378,19 +386,138 @@
                     span
                     span:first-child, span:last-child
                 .products
-                    width: 250px //!
+                    width: 200px //!
                     &-main
                         font-size: 25px //!
                         top: 55px
                         line-height: 35px
+                        margin-left: -50px
                         .more
                             font-size: 16px
                             line-height: 5px
                             margin-top: 35px
-                            margin-left: 25px
+                            margin-left: 10px
                     &-ring
                         right: 0px
                         img
                             width: 299px*0.7
                             height: 378px*0.7
+    // ===First block===
+    .firstBlock-outer-wrapper
+        .firstBlock-inner-wrapper
+            width: 280px
+            margin: 0
+            padding: 0
+            .firstBlock-content
+                width: inherit
+                &__title
+                    width: inherit
+                &__subtitle
+                    width: inherit
+                &__main-text
+                    width: inherit
+                &__more
+                    width: inherit
+            .firstBlock-figures
+                img 
+                    width: 513px*0.5
+                    height: auto
+    // / ===First block===
+    // ===Grafic===
+    .grafic-outer-wrapper
+        .grafic-inner-wrapper
+            .grafic-img
+                img
+                    width: 531px*0.5
+                    height: auto
+                    padding-left: 0px
+            .grafic-content
+                max-width: 280px
+                &__title
+                &__subtitle
+                &__main-text
+                &__more
+    // / ===Grafic===
+    // ===Contact===
+    .contact-outer-wrapper
+        .contact-inner-wrapper
+            .contact-main-text
+                font-size: 18px
+                line-height: 30px
+                text-align: center
+            .contact-button
+                input
+    // / ===Contact===
+    /// ===Services===
+    section.services-outer-wrapper
+        .services-inner-wrapper__small
+            .services-title
+                text-align: center
+            .services-subtitle
+        .services-inner-wrapper
+            max-width: 280px
+            .services-block
+                &__figure
+                    max-width: inherit
+                &__title
+                    max-width: inherit
+                    text-align: center
+                &__subtitle
+                    max-width: inherit
+                &:first-child
+                    .services-block__figure
+                &:nth-of-type(2)
+                    .services-block__figure
+                &:last-child
+    /// / ===Services===
+    // ===Best===
+    section.best-outer-wrapper
+        @include outer-wrapper
+        .best-inner-wrapper
+            max-width: 280px
+            .best-figure
+                max-width: inherit
+                img 
+                    width: 497px*0.5
+                    height: 525px*0.5
+            .best-content
+                max-width: inherit
+                &__title
+                &__subtitile
+                &__main-text
+                &__more
+    /// / ===Best===
+    /// ===Map===
+    .map-outer-wrapper
+        .map-outer-wrapper-small
+            max-width: 280px
+            .title
+                max-width: inherit
+            .subtitle
+                max-width: inherit
+        .map-inner-wrapper
+            max-width: 280px
+            .map-block
+                margin-left: 20px
+                &__img
+                    max-width: inherit
+                    img 
+                        width: 370px*0.7
+                &__content
+                    max-width: inherit
+                    &-title
+                    &-contact
+                        span 
+                        &:last-child
+                            span 
+    // / ===Map=== 
+    /// ===Footer===
+    footer.footer-outer-wrapper
+        .footer-inner-wrapper
+            .footer-content
+                margin-right: 30px
+                span
+            .footer-icons
+                span 
+    /// / ===Footer===
 
