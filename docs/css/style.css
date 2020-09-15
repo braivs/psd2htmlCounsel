@@ -140,39 +140,36 @@ header {
             text-decoration: none;
             font-size: 14px;
             letter-spacing: 0.56px; }
-    header .header-wrapper .header-content-wrapper {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      margin-top: 210px;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      header .header-wrapper .header-content-wrapper .section-header__slider {
+    header .header-wrapper section.swiper-wrapper {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      height: 510px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 210px; }
+      header .header-wrapper section.swiper-wrapper nav {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        margin-top: 90px;
-        height: 10px;
         -webkit-box-align: center;
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center;
         color: #fde428;
         font-family: "Myriad Pro";
-        font-size: 12px;
+        font-size: 18px;
         text-transform: uppercase; }
-        header .header-wrapper .header-content-wrapper .section-header__slider span {
+        header .header-wrapper section.swiper-wrapper nav span {
           display: inline-block;
           margin-right: 20px; }
-        header .header-wrapper .header-content-wrapper .section-header__slider span:first-child, header .header-wrapper .header-content-wrapper .section-header__slider span:last-child {
+        header .header-wrapper section.swiper-wrapper nav span:first-child, header .header-wrapper section.swiper-wrapper nav span:last-child {
           font-size: 21px; }
-      header .header-wrapper .header-content-wrapper .products {
+      header .header-wrapper section.swiper-wrapper .swiper-container {
         width: 510px;
-        height: 510px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -181,11 +178,7 @@ header {
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center; }
-        header .header-wrapper .header-content-wrapper .products .swiper-container .swiper-wrapper {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
+        header .header-wrapper section.swiper-wrapper .swiper-container .swiper-wrapper {
           -webkit-box-align: center;
           -webkit-align-items: center;
               -ms-flex-align: center;
