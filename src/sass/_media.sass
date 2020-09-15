@@ -1,3 +1,10 @@
+// galaxy fold: 280px
+// galaxy s5: 360px
+// $screen-sm: 576px +
+// $screen-md: 768px +
+// $screen-lg: 992px +
+// $screen-xl: 1200px +
+
 @media (max-width: 1400px)
     /// ===Counters===
     .counters-outer-wrapper
@@ -101,17 +108,29 @@
 // 992px - 768px
 @media (max-width: 992px)
     header
-        .nav-wrapper
-            flex-direction: column
-            .section-header__nav
-                padding-top: 25px
-
-
+        .header-wrapper
+            .nav-wrapper
+                flex-direction: column
+                .section-header__nav
+                    padding-top: 25px
+            section.swiperContainer
+                display: grid
+                margin-top: 80px
+                grid-template-columns: auto
+                grid-template-rows: auto auto
+                justify-items: center
+                row-gap: 50px
+                nav
+                    justify-content: center 
+                    order: 2
+                .swiper-container
+                    order: 1
     // ===First block===
     .firstBlock-outer-wrapper
         .firstBlock-inner-wrapper
             display: grid 
             grid-template-columns: auto
+            justify-items: center
             .firstBlock-content
                 order: 2
                 &__title
@@ -126,6 +145,7 @@
     // ===Grafic===
     .grafic-outer-wrapper
         .grafic-inner-wrapper
+            justify-items: center
             padding-top: 50px
             padding-bottom: 50px
             display: grid
@@ -166,6 +186,7 @@
             display: grid
             grid-template-columns: auto
             padding: 50px 0
+            justify-items: center
             .best-content
                 padding-top: 25px
     /// / ===Best===
@@ -198,9 +219,12 @@
         .header-wrapper
             .nav-wrapper
                 text-align: center
+                // border: 3px solid red
                 .section-header__nav
                     &-wrapper
                         flex-direction: column
+                        // border: 3px solid blue
+                        height: 120px
                         li:not(:first-child)
                             margin-top: 10px
             .header-content-wrapper

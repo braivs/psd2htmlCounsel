@@ -140,7 +140,7 @@ header {
             text-decoration: none;
             font-size: 14px;
             letter-spacing: 0.56px; }
-    header .header-wrapper section.swiper-wrapper {
+    header .header-wrapper section.swiperContainer {
       display: grid;
       grid-template-columns: auto auto;
       grid-template-rows: auto;
@@ -150,7 +150,7 @@ header {
           -ms-flex-align: center;
               align-items: center;
       margin-top: 210px; }
-      header .header-wrapper section.swiper-wrapper nav {
+      header .header-wrapper section.swiperContainer nav {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -162,15 +162,16 @@ header {
         color: #fde428;
         font-family: "Myriad Pro";
         font-size: 18px;
-        text-transform: uppercase; }
-        header .header-wrapper section.swiper-wrapper nav a span {
+        text-transform: uppercase;
+        width: 300px; }
+        header .header-wrapper section.swiperContainer nav a span {
           color: #fde428; }
-        header .header-wrapper section.swiper-wrapper nav span {
+        header .header-wrapper section.swiperContainer nav span {
           display: inline-block;
           margin-right: 20px; }
-        header .header-wrapper section.swiper-wrapper nav span:first-child, header .header-wrapper section.swiper-wrapper nav span:last-child {
-          font-size: 21px; }
-      header .header-wrapper section.swiper-wrapper .swiper-container {
+        header .header-wrapper section.swiperContainer nav span:first-child, header .header-wrapper section.swiperContainer nav span:last-child {
+          font-size: 18px; }
+      header .header-wrapper section.swiperContainer .swiper-container {
         width: 510px;
         display: -webkit-box;
         display: -webkit-flex;
@@ -180,7 +181,7 @@ header {
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center; }
-        header .header-wrapper section.swiper-wrapper .swiper-container .swiper-wrapper {
+        header .header-wrapper section.swiperContainer .swiper-container .swiper-wrapper {
           -webkit-box-align: center;
           -webkit-align-items: center;
               -ms-flex-align: center;
@@ -638,17 +639,39 @@ footer.footer-outer-wrapper {
     margin-right: 650px; } }
 
 @media (max-width: 992px) {
-  header .nav-wrapper {
+  header .header-wrapper .nav-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-    header .nav-wrapper .section-header__nav {
+    header .header-wrapper .nav-wrapper .section-header__nav {
       padding-top: 25px; }
+  header .header-wrapper section.swiperContainer {
+    display: grid;
+    margin-top: 80px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    row-gap: 50px; }
+    header .header-wrapper section.swiperContainer nav {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-ordinal-group: 3;
+      -webkit-order: 2;
+          -ms-flex-order: 2;
+              order: 2; }
+    header .header-wrapper section.swiperContainer .swiper-container {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1; }
   .firstBlock-outer-wrapper .firstBlock-inner-wrapper {
     display: grid;
-    grid-template-columns: auto; }
+    grid-template-columns: auto;
+    justify-items: center; }
     .firstBlock-outer-wrapper .firstBlock-inner-wrapper .firstBlock-content {
       -webkit-box-ordinal-group: 3;
       -webkit-order: 2;
@@ -665,6 +688,7 @@ footer.footer-outer-wrapper {
           -ms-flex-order: 1;
               order: 1; }
   .grafic-outer-wrapper .grafic-inner-wrapper {
+    justify-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
     display: grid;
@@ -688,7 +712,8 @@ footer.footer-outer-wrapper {
   section.best-outer-wrapper .best-inner-wrapper {
     display: grid;
     grid-template-columns: auto;
-    padding: 50px 0; }
+    padding: 50px 0;
+    justify-items: center; }
     section.best-outer-wrapper .best-inner-wrapper .best-content {
       padding-top: 25px; }
   .quote-outer-wrapper {
@@ -711,7 +736,8 @@ footer.footer-outer-wrapper {
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      height: 120px; }
       header .header-wrapper .nav-wrapper .section-header__nav-wrapper li:not(:first-child) {
         margin-top: 10px; }
   header .header-wrapper .header-content-wrapper {
