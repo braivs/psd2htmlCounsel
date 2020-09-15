@@ -1,3 +1,5 @@
+var pr = document.getElementsByClassName("swiper-prev")[0];
+var nx = document.getElementsByClassName("swiper-next")[0];
 var mySwiper = new Swiper('.swiper-container', {
 	pagination: {
 		el: '.swiper-pagination',
@@ -6,5 +8,9 @@ var mySwiper = new Swiper('.swiper-container', {
 			return current + ' of ' + total;
 		},
 	},
-	mousewheel: {},
+    mousewheel: {},
+    navigation: {
+        nextEl: nx,
+        prevEl: pr,
+    },
 });

@@ -163,6 +163,8 @@ header {
         font-family: "Myriad Pro";
         font-size: 18px;
         text-transform: uppercase; }
+        header .header-wrapper section.swiper-wrapper nav a span {
+          color: #fde428; }
         header .header-wrapper section.swiper-wrapper nav span {
           display: inline-block;
           margin-right: 20px; }

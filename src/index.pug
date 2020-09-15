@@ -36,12 +36,15 @@ html(lang="en")
                                     i.fa.fa-caret-down
                 section.swiper-wrapper                                                 
                     nav
-                        span.buttonLeft 
-                            i.fa.fa-long-arrow-left
-                        span
-                            | previous / Next 
-                        span.buttonRight 
-                            i.fa.fa-long-arrow-right
+                        a(href="#").swiper-prev
+                            span 
+                                i.fa.fa-long-arrow-left
+                            span previous
+                        span.separator | 
+                        a(href="#").swiper-next        
+                            span.buttonRight
+                                span next
+                                i.fa.fa-long-arrow-right
                     .swiper-container
                         .swiper-wrapper
                             .swiper-slide
