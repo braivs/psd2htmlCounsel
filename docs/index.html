@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/media.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
     <title>Counsel</title>
@@ -33,13 +33,14 @@
         <section class="header-content-wrapper">                                                
           <nav class="section-header__slider"><span> <i class="fa fa-long-arrow-left"></i></span><span>previous / Next </span><span> <i class="fa fa-long-arrow-right"></i></span></nav>
           <div class="products">
-            <div class="products-main">
-              Consumer<br>
-              Products<br>
-              Consulting
-              <section class="more">LEARN MORE</section>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/slide1.png" alt=""/></div>
+                <div class="swiper-slide"><img src="img/slide2.png" alt=""/></div>
+                <div class="swiper-slide"><img src="img/slide3.png" alt=""/></div>
+                <div class="swiper-slide"><img src="img/slide4.png" alt=""/></div>
+              </div>
             </div>
-            <div class="products-ring"><img src="img/ring.png" alt=""/></div>
           </div>
         </section>
       </div>
@@ -226,6 +227,8 @@
         <div class="footer-icons"><span> <i class="fab fa-facebook-f"></i></span><span><i class="fab fa-twitter"></i></span><span><i class="fab fa-google-plus-g"></i></span><span><i class="fab fa-instagram"></i></span></div>
       </div>
       <script src="https://kit.fontawesome.com/d10789e72e.js" crossorigin="anonymous"></script>
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/script.js"></script>
     </footer>
   </body>
 </html>

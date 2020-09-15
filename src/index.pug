@@ -3,12 +3,9 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        //- <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-        //- <meta name="viewport" content="width=1024"
-        //- <meta name="viewport" content="width=600, initial-scale=3">
+        link(rel="stylesheet", href="css/swiper-bundle.min.css")
         link(rel="stylesheet", href="css/normalize.css")
         link(rel="stylesheet", href="css/style.css")
-        link(rel="stylesheet", href="css/media.css")
         link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
         link(href!="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap", rel="stylesheet",)
         title Counsel
@@ -46,14 +43,16 @@ html(lang="en")
                         span 
                             i.fa.fa-long-arrow-right
                     .products
-                        .products-main
-                            | Consumer<br>
-                            | Products<br>
-                            | Consulting
-                            section.more
-                                | LEARN MORE
-                        .products-ring
-                            img(src="img/ring.png", alt="")
+                        .swiper-container
+                            .swiper-wrapper
+                                .swiper-slide
+                                    img(src="img/slide1.png", alt="")
+                                .swiper-slide
+                                    img(src="img/slide2.png", alt="")
+                                .swiper-slide
+                                    img(src="img/slide3.png", alt="")
+                                .swiper-slide
+                                    img(src="img/slide4.png", alt="")
         // / ===header===
 
         main
@@ -262,6 +261,8 @@ html(lang="en")
                     span
                         i.fab.fa-instagram
             script(src="https://kit.fontawesome.com/d10789e72e.js", crossorigin="anonymous")
+            script(src="js/swiper-bundle.min.js")
+            script(src="js/script.js")
 
 
 
