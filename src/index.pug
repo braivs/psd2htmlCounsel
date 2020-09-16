@@ -10,7 +10,8 @@ html(lang="en")
         link(href!="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap", rel="stylesheet",)
         title Counsel
     body
-        button.scrollToTop(onclick="topFunction()", title="Go to top")
+        a(href="#").scrollToTop(onclick="topFunction()", id="myBtn")
+            img(src="img/scrollToTop.png", alt="")
         // ===header===
         header
             .header-wrapper
