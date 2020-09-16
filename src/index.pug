@@ -19,15 +19,15 @@ html(lang="en")
                     nav.section-header__nav
                         ul.section-header__nav-wrapper
                             li
-                                a(href="#") About
+                                a(href="#about") About
                             li
-                                a(href="#") Services
+                                a(href="#services") Services
                             li
-                                a(href="#") Why We Best
+                                a(href="#best") Why We Best
                             li
-                                a(href="#") Testimonials
+                                a(href="#testimonials") Testimonials
                             li
-                                a(href="#") Contact
+                                a(href="#contact") Contact
                             li
                                 a(href="#")
                                     img(src="img/english.png", alt="")
@@ -80,6 +80,7 @@ html(lang="en")
 
             // ===Grafic===
             .grafic-outer-wrapper
+                a(name="about")
                 .grafic-inner-wrapper
                     .grafic-img
                         img(src="img/graph.png", alt="")
@@ -105,6 +106,7 @@ html(lang="en")
 
             /// ===Services===
             section.services-outer-wrapper
+                a(name="services")
                 .services-inner-wrapper__small
                     .services-title.common-title 
                         |Popular Services
@@ -131,8 +133,9 @@ html(lang="en")
                             |Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.
             /// / ===Services===        
 
-            /// ===Couters===
+            /// ===Counters===
             section.counters-outer-wrapper
+                a(name="testimonials")
                 .counters-inner-wrapper
                     .counter-block
                         .counter-block__title 7890
@@ -150,6 +153,7 @@ html(lang="en")
 
             // ===Best ===            
             section.best-outer-wrapper
+                a(name="best")
                 .best-inner-wrapper
                     .best-figure
                         img(src="img/player.png", alt="")
@@ -177,6 +181,7 @@ html(lang="en")
             
             /// ===Map===
             section.map-outer-wrapper.map
+                a(name="contact")
                 .map-outer-wrapper-small
                     .title.common-title.common-title   Contact with us
                     .subtitle.common-subtitle.common-subtitle
