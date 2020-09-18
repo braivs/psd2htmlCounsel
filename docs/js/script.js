@@ -22,7 +22,7 @@ var mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 896 || document.documentElement.scrollTop > 896) {
+    if (document.body.scrollTop > offset || document.documentElement.scrollTop > 896) {
     mybutton.style.display = "block";
     } else {
     mybutton.style.display = "none";

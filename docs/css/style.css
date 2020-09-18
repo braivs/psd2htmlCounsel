@@ -486,8 +486,7 @@ main {
       main section.map .maps .map-block {
         width: 370px;
         height: 455px;
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
-        margin-right: 30px; }
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07); }
         main section.map .maps .map-block__content {
           padding-left: 37px; }
           main section.map .maps .map-block__content-title {
