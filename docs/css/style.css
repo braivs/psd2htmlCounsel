@@ -667,6 +667,8 @@ footer {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
+    header section.top nav a {
+      margin-right: 0; }
     header section.top nav a:not(:last-child) {
       margin-bottom: 10px; }
   header section.swiper {
