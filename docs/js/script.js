@@ -8,7 +8,7 @@ var mySwiper = new Swiper('.swiper-container', {
 			return current + ' of ' + total;
 		},
 	},
-    mousewheel: {},
+    // mousewheel: {},
     navigation: {
         nextEl: nx,
         prevEl: pr,

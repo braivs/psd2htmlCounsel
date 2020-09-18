@@ -10,135 +10,109 @@ html(lang="en")
         link(href!="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap", rel="stylesheet",)
         title Counsel
     body
-        a(href="#").scrollToTop(onclick="topFunction()", id="myBtn")
+        //- a(href="#").scrollToTop(onclick="topFunction()", id="myBtn")
             img(src="img/scrollToTop.png", alt="")
-        // ===header===
         header
-            .header-wrapper
-                .nav-wrapper
-                    .section-header-logo Counsel
-                        .section-header-logo_subtile Own your course
-                    nav.section-header__nav
-                        ul.section-header__nav-wrapper
-                            li
-                                a(href="#about") About
-                            li
-                                a(href="#services") Services
-                            li
-                                a(href="#best") Why We Best
-                            li
-                                a(href="#testimonials") Testimonials
-                            li
-                                a(href="#contact") Contact
-                            li
-                                a(href="#")
-                                    img(src="img/english.png", alt="")
-                            li 
-                                a(href="#")
-                                    i.fa.fa-caret-down
-                section.swiperContainer                                                 
-                    nav
-                        a(href="#").swiper-prev
-                            span 
-                                i.fa.fa-long-arrow-left
-                            span previous
-                        span.separator | 
-                        a(href="#").swiper-next        
-                            span.buttonRight
-                                span next
-                                i.fa.fa-long-arrow-right
-                    .swiper-container
-                        .swiper-wrapper
-                            .swiper-slide
-                                img(src="img/slide1.png", alt="")
-                            .swiper-slide
-                                img(src="img/slide2.png", alt="")
-                            .swiper-slide
-                                img(src="img/slide3.png", alt="")
-                            .swiper-slide
-                                img(src="img/slide4.png", alt="")
-                        .swiper-pagination
-        // / ===header===
-
+            section.top.wrapper
+                .section-header-logo Counsel
+                    .section-header-logo_subtile Own your course
+                nav.section-header__nav
+                    a(href="#about") About
+                    a(href="#services") Services
+                    a(href="#best") Why We Best
+                    a(href="#testimonials") Testimonials
+                    a(href="#contact") Contact
+                    a(href="#")
+                        img(src="img/english.png", alt="")
+                    a(href="#")
+                        i.fa.fa-caret-down
+            section.swiper.wrapper                                                 
+                .control
+                    a(href="#").swiper-prev
+                        span 
+                            i.fa.fa-long-arrow-left
+                        span previous
+                    span.separator | 
+                    a(href="#").swiper-next        
+                        span.buttonRight
+                            span next
+                            i.fa.fa-long-arrow-right
+                .swiper-container
+                    .swiper-wrapper
+                        .swiper-slide
+                            img(src="img/slide1.png", alt="")
+                        .swiper-slide
+                            img(src="img/slide2.png", alt="")
+                        .swiper-slide
+                            img(src="img/slide3.png", alt="")
+                        .swiper-slide
+                            img(src="img/slide4.png", alt="")
+                    .swiper-pagination
         main
-            /// ===First block===            
-            .firstBlock-outer-wrapper
-                .firstBlock-inner-wrapper
-                    .firstBlock-content
-                        .firstBlock-content__title.common-title 
-                            |Take away the risk & you
-                            |can do anything.
-                        .firstBlock-content__subtitle.common-subtitle
-                            |Rapid solutions to the most complex business
-                            |challenges with cooperative process-driven.
-                        .firstBlock-content__main-text.common-main-text
-                            |Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
-                            |justo sapien, tempus 
-                        .firstBlock-content__more.common-more
-                            |Take a Tour
-                    .firstBlock-figures
-                        img(src="img/firstBlockImg.png", alt="")
-            /// / ===First block===  
-
-            // ===Grafic===
-            .grafic-outer-wrapper
+            section.firstBlock.wrapper
+                .content
+                    .title.common-title 
+                        |Take away the risk & you
+                        |can do anything.
+                    .subtitle.common-subtitle
+                        |Rapid solutions to the most complex business
+                        |challenges with cooperative process-driven.
+                    .main-text.common-main-text
+                        |Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
+                        |justo sapien, tempus 
+                    .more.common-more
+                        |Take a Tour
+                .figures
+                    img(src="img/firstBlockImg.png", alt="")
+            section.grafic
                 a(name="about")
-                .grafic-inner-wrapper
+                .grafic-inner.wrapper
                     .grafic-img
                         img(src="img/graph.png", alt="")
                     .grafic-content
-                        .grafic-content__title.common-title
-                            |Constructingthe  best in class global assets.
-                        .grafic-content__subtitle.common-subtitle
+                        .title.common-title
+                            |Constructing the best in class global assets.
+                        .subtitle.common-subtitle
                             |Rapid solutions to the most complex business challenges with cooperative process-driven.
-                        .grafic-content__main-text.common-main-text
+                        .main-text.common-main-text
                             |Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elementum turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. 
-                        .grafic-content__more.common-more
+                        .more.common-more
                             |Take a Tour
-            // / ===Grafic===
-            
-            // ===Contact===
-            section.contact-outer-wrapper
-                .contact-inner-wrapper
-                    .contact-main-text
+            section.contact
+                .contact-inner.wrapper
+                    .main-text
                         |Looking for a First-Class Business Plan Consultant?
-                    .contact-button
+                    .button
                         input(type="button", value="Contact Now", onClick='location.href="#contact"')
-            // / ===Contact===
-
-            /// ===Services===
-            section.services-outer-wrapper
+            section.services.wrapper
                 a(name="services")
-                .services-inner-wrapper__small
-                    .services-title.common-title 
+                .centerBlock
+                    .title.common-title 
                         |Popular Services
-                    .services-subtitle.common-subtitle
+                    .subtitle.common-subtitle
                         |Rapid solutions to the most complex business challenges<br> with cooperative process-driven.
-                .services-inner-wrapper
-                    .services-block
-                        .services-block__figure
-                        .services-block__title.common-title 
+                .centerServiceBlock
+                    .serviceBlock
+                        .figure
+                        .title.common-title 
                             |Turnaround Consulting
-                        .services-block__subtitle.common-subtitle
+                        .subtitle.common-subtitle
                             |Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.
-                    .services-block
-                        .services-block__figure
-                        .services-block__title.common-title 
+                    .serviceBlock
+                        .figure
+                        .title.common-title 
                             |Bonds & Commodities
-                        .services-block__subtitle.common-subtitle
+                        .subtitle.common-subtitle
                             |Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.
-                    .services-block
-                        .services-block__figure
-                        .services-block__title.common-title 
+                    .serviceBlock
+                        .figure
+                        .title.common-title 
                             |Audit & Assurance
-                        .services-block__subtitle.common-subtitle
+                        .subtitle.common-subtitle
                             |Companies dislike the term ‘turnaround consulting’ because it represents failure. The truth is that turnaround consulting represents success.
-            /// / ===Services===        
-
-            /// ===Counters===
-            section.counters-outer-wrapper
+            section.counters
                 a(name="testimonials")
-                .counters-inner-wrapper
+                .inner-wrapper.wrapper
                     .counter-block
                         .counter-block__title 7890
                         .counter-block__subtitle Coffee cups
@@ -151,29 +125,23 @@ html(lang="en")
                     .counter-block
                         .counter-block__title 5972
                         .counter-block__subtitle purchases
-            /// / ===Counters===
-
-            // ===Best ===            
-            section.best-outer-wrapper
-                a(name="best")
-                .best-inner-wrapper
-                    .best-figure
-                        img(src="img/player.png", alt="")
-                    .best-content
-                        .best-content__title.common-title 
-                            |Why  we best Consulting 
-                            |office in london ?
-                        .best-content__subtitile.common-subtitle
-                            |Rapid solutions to the most complex business challenges with cooperative process-driven.
-                        .best-content__main-text.common-main-text
-                            |Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
-                            |justo sapien, tempus 
-                        .best-content__more.common-more
-                            |Our services
-            // / ===Best===
-            
-            section.quote-outer-wrapper.quote
-                .quote-inner-wrapper
+            section.best.wrapper
+                .figure
+                    a(name="best")
+                    img(src="img/player.png", alt="")
+                .content
+                    .best-content__title.common-title 
+                        |Why  we best Consulting 
+                        |office in london ?
+                    .best-content__subtitile.common-subtitle
+                        |Rapid solutions to the most complex business challenges with cooperative process-driven.
+                    .best-content__main-text.common-main-text
+                        |Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
+                        |justo sapien, tempus 
+                    .best-content__more.common-more
+                        |Our services
+            section.quote
+                .inner-wrapper.wrapper
                     .quote__title “
                     .quote__main-text
                         |Lorem ipsum do`lor sit amet, consectetur adipisicing elit
@@ -181,15 +149,14 @@ html(lang="en")
                         |Voluptate velit esse cillum dolore eu fugiat nullapariatur.
                     .quote__subtitle SAM ISBISTER
             
-            /// ===Map===
-            section.map-outer-wrapper.map
+            section.map
                 a(name="contact")
-                .map-outer-wrapper-small
-                    .title.common-title.common-title   Contact with us
-                    .subtitle.common-subtitle.common-subtitle
+                .top
+                    .title.common-title Contact with us
+                    .subtitle.common-subtitle
                         |Rapid solutions to the most complex business challenges<br>
                         |with cooperative process-driven.
-                .map-inner-wrapper
+                .maps
                     .map-block
                         .map-block__img
                             img(src="img/map.png", alt="")
@@ -254,10 +221,12 @@ html(lang="en")
                                     i.fas.fa-envelope
                                 span
                                     |+445 6231 411
-            /// / ===Map===
 
-        footer.footer-outer-wrapper
-            .footer-inner-wrapper
+        footer
+            script(src="https://kit.fontawesome.com/d10789e72e.js", crossorigin="anonymous")
+            script(src="js/swiper-bundle.min.js")
+            script(src="js/script.js")
+            .footer-inner.wrapper
                 .footer-content
                     |Copyright ©
                     span BriWS
@@ -270,9 +239,7 @@ html(lang="en")
                         i.fab.fa-google-plus-g
                     span
                         i.fab.fa-instagram
-            script(src="https://kit.fontawesome.com/d10789e72e.js", crossorigin="anonymous")
-            script(src="js/swiper-bundle.min.js")
-            script(src="js/script.js")
+            
 
 
 

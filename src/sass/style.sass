@@ -28,8 +28,12 @@ $moreFZ: 16px
     box-sizing: border-box
     margin: 0
     padding: 0
+html 
+    width: 100%
+    // line-height: 0.7
 body 
     font-family: Montserrat
+    width: 100%
 .scrollToTop
     display: none 
     position: fixed 
@@ -40,17 +44,10 @@ body
     img 
         width: 100px
         display: inline
+.wrapper
+    width: 1200px
 
-.common-outer-wrapper
-    display: flex
-    justify-content: center
-    max-width: 100vw
-.common-inner-wrapper
-    display: flex
-    justify-content: center
-    width: inherit
 .common-title 
-    width: 480px
     color: #002e5b
     font-size: $titleFZ
     font-weight: 700
@@ -58,7 +55,6 @@ body
     text-transform: uppercase
 .common-subtitle
     margin-top: 25px
-    width: 460px
     color: #666666
     font-family: "Segoe UI Emoji"
     font-size: $subtitleFZ
@@ -66,7 +62,6 @@ body
     line-height: 25px
 .common-main-text
     margin-top: 25px
-    width: 580px
     height: auto
     color: #333333
     font-family: "Segoe UI Emoji"
@@ -127,332 +122,293 @@ body
     text-transform: uppercase
     text-decoration: underline
 // / ===Mixins===
-
-header
-    background: url(../img/background.png) no-repeat center
+body
     display: flex
+    max-width: 100%
+    flex-direction: column
+    align-items: center
+header
+    background: url(../img/background.png) center
+    display: flex
+    flex-direction: column
     height: 896px
-    justify-content: center
+    align-items: center
     color: #fff
-    padding: 0 50px
-    .header-wrapper
-        width: 1170px
-        margin-top: 40px
-        .nav-wrapper
+    width: 100%
+    padding-top: 50px
+    section.top
+        display: flex
+        justify-content: space-between
+        .section-header-logo
+            color: #fde428
+            font-size: 45px
+            font-weight: 700
+            &_subtile
+                color: #fff
+                font-size: 12px
+                letter-spacing: 3.6px
+                text-transform: uppercase
+        nav
             display: flex
             justify-content: space-between
-            .section-header-logo
-                color: #fde428
-                font-size: 45px
-                font-weight: 700
-                &_subtile
-                    color: #fff
-                    font-size: 12px
-                    letter-spacing: 3.6px
-                    text-transform: uppercase
-            .section-header__nav
-                &-wrapper
-                    display: flex
-                    list-style: none
-                    height: 32px
-                    justify-content: space-between
-                    align-items: center
-                    li
-                        margin-right: 30px
-                        a
-                            color: #fff 
-                            text-transform: uppercase 
-                            text-decoration: none
-                            font-size: 14px
-                            letter-spacing: 0.56px
-        section.swiperContainer
+            align-items: center
+            a
+                display: inline-block
+                margin-right: 30px
+                color: #fff 
+                text-transform: uppercase 
+                text-decoration: none
+                font-size: 14px
+                letter-spacing: 0.56px
+    section.swiper
+        display: grid
+        grid-template-columns: auto auto
+        grid-template-rows: auto
+        align-items: center
+        margin-top: 220px
+        .control
+            display: flex
+            align-items: center
+            color: #fde428
+            font-family: "Myriad Pro"
+            font-size: 18px
+            text-transform: uppercase
+            a
+                span
+                    color: #fde428
+            span
+                display: inline-block
+                margin-right: 20px
+            span:first-child, span:last-child
+                font-size: 18px
+        .swiper-container
+            width: 510px 
+            display: flex
+            align-items: center
+            .swiper-wrapper
+                align-items: center
+main
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    section.firstBlock
+        display: grid
+        grid-template-columns: auto auto
+        column-gap: 139px
+        .content
+            align-self: center
+        .figures
+            display: flex
+            justify-self: end
+    section.grafic
+        background-color: #f4f4f4
+        display: grid
+        grid-template-columns: 100%
+        grid-template-rows: auto
+        justify-items: center
+        width: 100%
+        .grafic-inner
+            padding: 100px 0
             display: grid
             grid-template-columns: auto auto
-            grid-template-rows: auto
-            height: 510px
-            align-items: center
-            margin-top: 210px
-            max-width: 100vw
-            nav
-                display: flex
-                align-items: center
-                color: #fde428
-                font-family: "Myriad Pro"
-                font-size: 18px
-                text-transform: uppercase
-                width: 300px
-                a
-                    span
-                        color: #fde428
-                span
-                    display: inline-block
-                    margin-right: 20px
-                span:first-child, span:last-child
-                    font-size: 18px
-            .swiper-container
-                width: 510px 
-                // height: 510px
-                display: flex
-                align-items: center
-                .swiper-wrapper
-                    align-items: center
-                    // justify-content: center
-                        
-// ===First block===
-.firstBlock-outer-wrapper
-    display: flex
-    justify-content: center
-    .firstBlock-inner-wrapper
-        @include inner-wrapper
-        .firstBlock-content
-            display: flex
-            flex-direction: column
-            &__title
-                padding-top: 100px
-            &__subtitle
-            &__main-text
-            &__more
-        .firstBlock-figures
-            display: flex
-// / ===First block===
-
-// ===Grafic===
-.grafic-outer-wrapper
-    display: flex
-    justify-content: center
-    background-color: #f4f4f4
-    .grafic-inner-wrapper
-        @include inner-wrapper
-        padding-top: 100px
-        padding-bottom: 100px
-        .grafic-img
-            margin-right: 70px
-        .grafic-content
-            height: auto
-            &__title
-            &__subtitle
-            &__main-text
-            &__more
-// / ===Grafic===
-
-// ===Contact===
-.contact-outer-wrapper
-    display: flex
-    justify-content: center
-    background-color: #002e5b
-    padding: 30px 0
-    .contact-inner-wrapper
-        @include inner-wrapper
-        .contact-main-text
-            // width: 534px
-            height: auto
-            color: #ffffff
-            font-family: Montserrat
-            font-size: 21px
-            font-weight: 400
-            line-height: 51px
-            margin-right: 470px
-        .contact-button
-            input
-                height: 44px
-                border: none
-                width: 161px
-                border-radius: 3px
-                background-color: #fde428
-                text-transform: uppercase
-                color: #002e5b
-                font-size: 16px
-                font-weight: 700
-                cursor: pointer
-// / ===Contact===
-
-/// ===Services===
-section.services-outer-wrapper
-    display: flex
-    flex-direction: column
-    align-items: center
-    .services-inner-wrapper__small
-        display: flex
-        width: auto
-        flex-direction: column
-        justify-content: center
-        padding: 100px 0 40px
-        .services-title
-            text-align: center
-        .services-subtitle
-            width: auto
-            text-align: center
-    .services-inner-wrapper
+            column-gap: 65px
+    section.contact
+        width: 100%
         display: flex
         justify-content: center
-        .services-block
-            width: 370px
-            height: auto
+        background-color: #002e5b
+        padding: 30px 0
+        .contact-inner
             display: flex
-            flex-direction: column
-            margin-right: 30px
-            &__figure
-                width: auto
-                height: 190px
-                background-color: #f49f77
-            &__title
-                width: auto
+            justify-content: space-between
+            .main-text
+                height: auto
+                color: #ffffff
+                font-family: Montserrat
                 font-size: 21px
-                padding-top: 35px
-            &__subtitle
-                @include subtitle
-                display: flex
-                width: auto
-            &:first-child
-                .services-block__figure
-                    background-color: #69d2e7
-            &:nth-of-type(2)
-                .services-block__figure
-                    background-color: #add478
-            &:last-child
-/// / ===Services===
-
-/// ===Counters===
-.counters-outer-wrapper
-    @include outer-wrapper
-    background-color: #002e5b
-    margin-top: 100px
-    .counters-inner-wrapper
-        @include inner-wrapper
-        .counter-block
-            padding: 120px 0
-            margin-right: 185px
-            .counter-block__title
-                width: 152px
-                height: 36px
-                color: #ffffff
-                font-size: 48px
-                line-height: 60px
-                text-transform: uppercase
-                letter-spacing: 12px
-                text-align: center
-            .counter-block__subtitle
-                color: #ffffff
-                font-family: "Segoe UI Emoji"
-                font-size: 14px
-                line-height: 48px
-                text-transform: uppercase
-                letter-spacing: 2.8px
-                text-align: center
-                margin-top: 30px
-/// / ===Counters===
-
-// ===Best===
-section.best-outer-wrapper
-    @include outer-wrapper
-    .best-inner-wrapper
-        display: flex
-        .best-figure
-            display: flex
-            margin-right: 100px
-        .best-content
-            padding-top: 100px
-            z-index: 2
-            &__title
-            &__subtitile
-            &__main-text
-            &__more
-/// / ===Best===
-
-// ===Quote===
-.quote-outer-wrapper
-    @include outer-wrapper
-    background-color: #002e5b
-    padding: 120px 0
-    .quote-inner-wrapper
-        @include inner-wrapper
-        flex-direction: column
-        max-width: 900px
-        .quote__title
-            color: #ffffff
-            font-family: "Helvetica Rounded LT - Black"
-            font-size: 48px
-            line-height: 37.94px
-            text-align: center
-        .quote__main-text
-            color: #ffffff
-            font-family: "Myriad Pro"
-            font-size: 20px
-            line-height: 37.94px
-            text-align: center
-        .quote__subtitle
-            color: #ffffff
-            font-size: 14px
-            font-weight: 700
-            line-height: 47.92px
-            text-align: center
-            text-transform: uppercase
-// / ===Quote===
-
-/// ===Map===
-.map-outer-wrapper
-    display: flex
-    flex-direction: column
-    align-items: center
-    padding-top: 95px
-    .map-outer-wrapper-small
-        .title
-            width: auto
-            text-align: center
-        .subtitle
-            width: auto
-            text-align: center
-    .map-inner-wrapper
-        display: flex
-        justify-content: center
-        padding: 42px 0 100px
-        .map-block
-            width: 370px
-            height: 455px
-            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07)
-            margin-right: 30px
-            &__img
-            &__content
-                padding-left: 37px
-                &-title
-                    margin-top: 39px
+                font-weight: 400
+                line-height: 51px
+            .button
+                input
+                    height: 44px
+                    border: none
+                    width: 161px
+                    border-radius: 3px
+                    background-color: #fde428
+                    text-transform: uppercase
                     color: #002e5b
                     font-size: 16px
                     font-weight: 700
-                    line-height: 13.82px
-                    text-transform: uppercase
-                &-contact
-                    margin-top: 15px
-                    color: #002e5b
-                    font-family: "Segoe UI Emoji"
+                    cursor: pointer
+    section.services
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 95px 0
+        .centerBlock
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: 40px
+            .subtitle
+                text-align: center
+        .centerServiceBlock
+            display: flex
+            justify-content: space-between
+            width: 100%
+            .serviceBlock
+                width: 370px
+                height: auto
+                display: flex
+                flex-direction: column
+                .figure
+                    width: auto
+                    height: 190px
+                    background-color: #69d2e7
+                    &:nth-of-type(2)
+                        background-color: #add478
+                &:nth-of-type(2)
+                    .figure
+                        background-color: #add478
+                &:nth-of-type(3)
+                    .figure
+                        background-color: #f49f77
+                .title
+                    font-size: 21px
+                    padding-top: 35px
+                .subtitle
                     font-size: 16px
-                    font-weight: 400
-                    line-height: 21px
-                    width: 230px
-                    display: flex
-                    // justify-content: space-between
-                    // border: 1px solid green
-                    span 
-                        margin-right: 25px
-                    &:last-child
-                        span 
-                            margin-left: -3px
-// / ===Map=== 
-
-/// ===Footer===
-footer.footer-outer-wrapper
-    display: flex
-    justify-content: center
-    background-color: #002e5b 
-    .footer-inner-wrapper
+    section.counters
+        background-color: #002e5b
+        width: 100%
         display: flex
         justify-content: center
+        .inner-wrapper
+            display: flex
+            justify-content: space-between
+            .counter-block
+                padding: 120px 0
+                .counter-block__title
+                    // width: 152px
+                    height: 36px
+                    color: #ffffff
+                    font-size: 48px
+                    line-height: 60px
+                    text-transform: uppercase
+                    letter-spacing: 12px
+                    text-align: center
+                .counter-block__subtitle
+                    color: #ffffff
+                    font-family: "Segoe UI Emoji"
+                    font-size: 14px
+                    // line-height: 48px
+                    text-transform: uppercase
+                    letter-spacing: 2.8px
+                    text-align: center
+                    margin-top: 30px
+    section.best
+        display: grid
+        justify-content: space-between
+        grid-template-columns: auto auto
+        grid-row: auto
+        column-gap: 100px
+        line-height: 0.7
+        .content
+            align-self: center
+    section.quote
+        display: flex
+        justify-content: center
+        background-color: #002e5b
+        padding: 120px 0
+        width: 100%
+        .inner-wrapper
+            display: flex
+            flex-direction: column
+            .quote__title
+                color: #ffffff
+                font-family: "Helvetica Rounded LT - Black"
+                font-size: 48px
+                line-height: 37.94px
+                text-align: center
+            .quote__main-text
+                color: #ffffff
+                font-family: "Myriad Pro"
+                font-size: 20px
+                line-height: 37.94px
+                text-align: center
+            .quote__subtitle
+                color: #ffffff
+                font-size: 14px
+                font-weight: 700
+                line-height: 47.92px
+                text-align: center
+                text-transform: uppercase
+    section.map
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: 100px 0
+        .top
+            display: flex
+            flex-direction: column
+            justify-content: center
+            .title
+                text-align: center
+            .subtitle
+                text-align: center
+        .maps
+            margin-top: 45px
+            grid-template-columns: auto auto auto
+            column-gap: 30px
+            display: grid
+            .map-block
+                width: 370px
+                height: 455px
+                box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07)
+                // margin-right: 30px
+                &__img
+                &__content
+                    padding-left: 37px
+                    &-title
+                        margin-top: 39px
+                        color: #002e5b
+                        font-size: 16px
+                        font-weight: 700
+                        line-height: 13.82px
+                        text-transform: uppercase
+                    &-contact
+                        margin-top: 15px
+                        color: #002e5b
+                        font-family: "Segoe UI Emoji"
+                        font-size: 16px
+                        font-weight: 400
+                        line-height: 21px
+                        width: 230px
+                        display: flex
+                        // justify-content: space-between
+                        // border: 1px solid green
+                        span 
+                            margin-right: 25px
+                        &:last-child
+                            span 
+                                margin-left: -3px
+    // / ===Map=== 
+
+/// ===Footer===
+footer
+    display: flex
+    justify-content: center
+    background-color: #002e5b
+    width: 100% 
+    .footer-inner
+        display: flex
+        justify-content: space-between
         color: #ffffff
         font-size: 16px
         line-height: 45px
         padding: 30px 0
         .footer-content
-            margin-right: 870px
             span
                 margin-left: 5px
                 color: #fde52c

@@ -5,596 +5,747 @@
 // $screen-lg: 992px +
 // $screen-xl: 1200px +
 
-@media (max-width: 1400px)
-    /// ===Counters===
-    .counters-outer-wrapper
-        .counters-inner-wrapper
-            margin-left: 100px
-    /// / ===Counters===
-
-@media (max-width: 1307px)
-    /// ===Counters===
-    .counters-outer-wrapper
-        .counters-inner-wrapper
-            margin-left: 150px
-    /// / ===Counters===    
-
-@media (max-width: 1254px)
-    // ===First block===
-    .firstBlock-outer-wrapper
-        .firstBlock-inner-wrapper
-            .firstBlock-content
-                &__title
-                    padding-top: 50px
-            .firstBlock-figures
-                img
-                    width: 513px*0.7
-                    height: auto
-    // / ===First block===
-
-    /// === Services ===
-    section.services-outer-wrapper
-        .services-inner-wrapper
-            margin-left: 20px 
-            .services-block
-                width: 290px
-                .services-block__figure
-                    height: 150px
-                .services-block__title
-                    font-size: 19px
-    /// / === Services ===
-
-    // ===Grafic===
-    .grafic-outer-wrapper
-        .grafic-inner-wrapper
-            .grafic-img
-                margin-right: 20px
-                img
-                    width: 531px*0.7
-                    height: auto
-                    padding-left: 20px
-    // / ===Grafic===
-
-    // ===Contact===
-    .contact-outer-wrapper
-        .contact-inner-wrapper
-            .contact-main-text
-                margin-right: 200px
-    // / ===Contact===
-
-    /// ===Counters===
-    .counters-outer-wrapper
-        .counters-inner-wrapper
-            margin-left: 100px
-            .counter-block
-                margin-right: 100px
-        /// / ===Counters===
-    
-    // ===Best===
-    section.best-outer-wrapper
-        .best-inner-wrapper
-            .best-figure
-                margin-right: 20px
-                img 
-                    width: 497px*0.7
-                    height: 525px*0.7
-            .best-content
-                padding-top: 50px
-    /// / ===Best===
-
-    /// ===Map===
-    .map-outer-wrapper
-        .map-inner-wrapper
-            width: 800px
-            .map-block
-                width: 370px*0.75
-                height: auto
-                padding-bottom: 50px
-                &__img
-                    img 
-                        width: 370px*0.75
-                        height: auto
-    /// / ===Map===
-    
-    /// ===Footer===
-    footer.footer-outer-wrapper
-        .footer-inner-wrapper
-            .footer-content
-                margin-right: 650px
-    /// / ===Footer===
-
-// 992px - 768px
-@media (max-width: 992px)
-    .scrollToTop
-        bottom: 100px
+//992px-1200px
+@media (max-width: 1200px)
+    .wrapper
+        width: 90%
     header
-        .header-wrapper
-            .nav-wrapper
-                flex-direction: column
-                .section-header__nav
-                    padding-top: 25px
-            section.swiperContainer
-                display: grid
-                margin-top: 80px
-                grid-template-columns: auto
+        section.top
+            .section-header-logo
+                margin-bottom: 20px
+        section.swiper
+            margin-top: 100px
+    main 
+        section.firstBlock
+            .figures
+                img
+                    width: 100%
+        section.grafic
+            .grafic-inner
+                column-gap: 15px
+                .grafic-img
+                    img
+                        width: 100%
+        section.services
+            padding: 45px 0
+            .centerServiceBlock
+                .serviceBlock
+                    .title
+                        font-size: 18px
+        section.counters
+            .inner-wrapper
+                .counter-block
+                    padding: 60px 0
+        section.map
+            .maps
+                grid-template-columns: auto auto
                 grid-template-rows: auto auto
-                justify-items: center
-                row-gap: 50px
-                nav
-                    justify-content: center 
-                    order: 2
-                .swiper-container
-                    order: 1
-    // ===First block===
-    .firstBlock-outer-wrapper
-        .firstBlock-inner-wrapper
-            display: grid 
-            grid-template-columns: auto
-            justify-items: center
-            .firstBlock-content
-                order: 2
-                &__title
-                    padding-top: 25px
-                &__more
-                    padding-bottom: 25px
-            .firstBlock-figures
-                padding-top: 25px
-                order: 1
-    // / ===First block===
+                row-gap: 30px
 
-    // ===Grafic===
-    .grafic-outer-wrapper
-        .grafic-inner-wrapper
-            justify-items: center
-            padding-top: 50px
-            padding-bottom: 50px
-            display: grid
-            grid-template-columns: auto
-            row-gap: 25px
-    // / ===Grafic===
+        
 
-    // ===Contact===
-    .contact-outer-wrapper
-        .contact-inner-wrapper
-            .contact-main-text
-                margin-right: 30px
-    // / ===Contact===
-
-    /// === Services ===
-    section.services-outer-wrapper
-        .services-inner-wrapper__small
-            padding: 50px 0 40px
-        .services-inner-wrapper
-            display: grid
-            grid-template-columns: auto auto
-            row-gap: 30px
-    /// / === Services ===
-
-    /// ===Counters===
-    .counters-outer-wrapper
-        margin-top: 50px
-        .counters-inner-wrapper
-            margin-left: 30px
-            .counter-block
-                padding: 60px 0
-                margin-right: 30px
-    /// / ===Counters===
-
-    // ===Best===
-    section.best-outer-wrapper
-        .best-inner-wrapper
-            display: grid
-            grid-template-columns: auto
-            padding: 50px 0
-            justify-items: center
-            .best-content
-                padding-top: 25px
-    /// / ===Best===
-
-    // ===Quote===
-    .quote-outer-wrapper
-        padding: 60px 30px
-    // / ===Quote===
-
-    /// ===Map===
-    .map-outer-wrapper
-        padding-top: 50px
-        .map-inner-wrapper
-            display: grid
-            grid-template-columns: auto auto
-            row-gap: 30px
-            padding: 42px 0 50px
-    /// / ===Map===
-
-    /// ===Footer===
-    footer.footer-outer-wrapper
-        .footer-inner-wrapper
-            .footer-content
-                margin-right: 350px
-    /// / ===Footer===
-
-// 576px - 768px
-@media (max-width: 768px)
+//768px - 991px
+@media (max-width: 991px)
+    .common-title
+        text-align: center
     header
-        .header-wrapper
-            .nav-wrapper
-                text-align: center
-                // border: 3px solid red
-                .section-header__nav
-                    &-wrapper
-                        flex-direction: column
-                        // border: 3px solid blue
-                        height: 120px
-                        li:not(:first-child)
-                            margin-top: 10px
-            .header-content-wrapper
-                display: grid
-                margin-left: 100px
-                margin-top: 210px
-                .section-header__slider
-                    order: 1
-
-    
-    // ===First block===
-    .firstBlock-outer-wrapper
-        .firstBlock-inner-wrapper
-            padding-left: 50px
-    // / ===First block===
-
-    // ===Grafic===
-    .grafic-outer-wrapper
-        .grafic-inner-wrapper
-            margin-left: 50px 
-            .grafic-content
-                &__main-text
-                    width: inherit
-                
-    // / ===Grafic===
-
-    // ===Contact===
-    .contact-outer-wrapper
-        .contact-inner-wrapper
+        .top
             flex-direction: column
             align-items: center
-            .contact-main-text
-                margin-right: 0
-                margin-bottom: 20px
-    // / ===Contact===
-
-    /// === Services ===
-    section.services-outer-wrapper
-        .services-inner-wrapper__small
-            padding: 25px 0 40px
-        .services-inner-wrapper
-            display: grid
+            nav
+        section.swiper
             grid-template-columns: auto
+            grid-template-rows: auto auto
+            // row-gap: 15px
+            .control
+                justify-content: center 
+                order: 2
+            .swiper-container
+                order: 1
+    main
+        section.firstBlock
+            grid-template-columns: 100%
+            grid-template-rows: auto auto
             row-gap: 20px
-    /// / === Services ===
-
-    /// ===Counters===
-    .counters-outer-wrapper
-        margin-top: 25px
-        .counters-inner-wrapper
-            margin-left: 0
-            flex-direction: column
-            .counter-block
-                padding: 0px 0
-                margin-right: 0
-                .counter-block__subtitle
-                    margin-top: 5px
-
-    /// / ===Counters===
-
-    // ===Best ===            
-    section.best-outer-wrapper
-        .best-inner-wrapper
-            // border: 3px solid red
-            margin-left: 50px
-    // / ===Best ===
-
-    /// ===Map===
-    .map-outer-wrapper
-        .map-outer-wrapper-small
-            max-width: 576px
-            .title
-                max-width: inherit
-            .subtitle
-                max-width: inherit
-        .map-inner-wrapper
-            max-width: 576px
-            grid-template-columns: auto 
-            .map-block
-                &__img
-                    max-width: inherit
-                    img 
-                &__content
-                    max-width: inherit
-                    &-title
-                    &-contact
-                        span 
-                        &:last-child
-                            span 
-    /// / ===Map===
-
-    /// ===Footer===
-    footer.footer-outer-wrapper
-        .footer-inner-wrapper
-            .footer-content
-                margin-right: 250px
-    /// / ===Footer===
-
-//500px-576px
-@media (max-width: 576px)
-    .common-outer-wrapper
-    .common-inner-wrapper
-    .common-title
-        width: 450px
-        font-size: 20px
-    .common-subtitle
-    .common-main-text
-    .common-more
+            .content
+                order: 2
+                justify-self: center
+            .figures
+                order: 1
+                justify-self: center
+        section.grafic
+            .grafic-inner
+                padding: 50px 0
+                grid-template-columns: 100%
+                grid-template-rows: auto auto
+                row-gap: 20px
+                .grafic-img
+                    justify-self: center
+        section.contact
+            .contact-inner
+                flex-direction: column
+                align-items: center
+                .main-text
+                    text-align: center
+                    line-height: 30px
+                    margin-bottom: 10px
+        section.services
+            .centerServiceBlock
+                flex-direction: column
+                align-items: center
+        section.best
+            grid-template-columns: auto
+            grid-row: auto auto
+            row-gap: 20px
+            .figure
+                justify-self: center
+        section.quote
+            padding: 60px 0
+        section.map
+            margin: 50px 0
+            .maps
+                grid-template-columns: auto
+                grid-row: auto auto auto
+        
+        
+//576px - 767px
+@media (max-width: 767px)
     header
-        // height: auto
-        .header-wrapper
-            section.swiperContainer                                                 
-                .swiper-container
-                    max-width: 100vw
-                    // justify-content: center
-                    // flex-direction: column
-                    .swiper-wrapper
-                        .swiper-slide
-                            img
-                                max-width: 100%
-                                padding: 0 20px
+        section.top
+            nav
+                flex-direction: column
+                a:not(:last-child)
+                    margin-bottom: 10px
+        section.swiper
+            margin-top: 0px
+    main
+        section.counters
+            .inner-wrapper
+                flex-direction: column
+                align-items: center
+                .counter-block
+                    padding: 10px 0
+//360px - 575px
+@media (max-width: 575px)
+    .common-title
+        font-size: 20px
+    header
+        height: auto
+        padding-bottom: 50px
+        section.swiper
+            .swiper-container
+                width: 100%
+                .swiper-slide
+                    img
+                        width: 90%
+                        text-align: center
+    main
+        section.services
+            .centerServiceBlock
+                .serviceBlock
+                    width: 320px
+        section.best
+            .figure
+                img 
+                    width: 100%
+        section.map
+            .maps
+                .map-block
+                    width: 320px
+                    .map-block__img
+                        img
+                            width: 100%
+            
+@media (max-width: 350px)
+    main
+        section.services
+            .centerServiceBlock
+                .serviceBlock
+                    width: 240px
+        section.map
+            .maps
+                .map-block
+                    width: 250px
+                    height: 380px
+    footer 
+        .footer-inner
+            flex-direction: column
+            align-items: center
+            line-height: 25px
+// @media (max-width: 1307px)
+//     /// ===Counters===
+//     .counters-outer-wrapper
+//         .counters-inner-wrapper
+//             margin-left: 150px
+//     /// / ===Counters===    
+
+// @media (max-width: 1254px)
+//     // ===First block===
+//     .firstBlock-outer-wrapper
+//         .firstBlock-inner-wrapper
+//             .firstBlock-content
+//                 &__title
+//                     padding-top: 50px
+//             .firstBlock-figures
+//                 img
+//                     width: 513px*0.7
+//                     height: auto
+//     // / ===First block===
+
+//     /// === Services ===
+//     section.services-outer-wrapper
+//         .services-inner-wrapper
+//             margin-left: 20px 
+//             .services-block
+//                 width: 290px
+//                 .services-block__figure
+//                     height: 150px
+//                 .services-block__title
+//                     font-size: 19px
+//     /// / === Services ===
+
+//     // ===Grafic===
+//     .grafic-outer-wrapper
+//         .grafic-inner-wrapper
+//             .grafic-img
+//                 margin-right: 20px
+//                 img
+//                     width: 531px*0.7
+//                     height: auto
+//                     padding-left: 20px
+//     // / ===Grafic===
+
+//     // ===Contact===
+//     .contact-outer-wrapper
+//         .contact-inner-wrapper
+//             .contact-main-text
+//                 margin-right: 200px
+//     // / ===Contact===
+
+//     /// ===Counters===
+//     .counters-outer-wrapper
+//         .counters-inner-wrapper
+//             margin-left: 100px
+//             .counter-block
+//                 margin-right: 100px
+//         /// / ===Counters===
+    
+//     // ===Best===
+//     section.best-outer-wrapper
+//         .best-inner-wrapper
+//             .best-figure
+//                 margin-right: 20px
+//                 img 
+//                     width: 497px*0.7
+//                     height: 525px*0.7
+//             .best-content
+//                 padding-top: 50px
+//     /// / ===Best===
+
+//     /// ===Map===
+//     .map-outer-wrapper
+//         .map-inner-wrapper
+//             width: 800px
+//             .map-block
+//                 width: 370px*0.75
+//                 height: auto
+//                 padding-bottom: 50px
+//                 &__img
+//                     img 
+//                         width: 370px*0.75
+//                         height: auto
+//     /// / ===Map===
+    
+//     /// ===Footer===
+//     footer.footer-outer-wrapper
+//         .footer-inner-wrapper
+//             .footer-content
+//                 margin-right: 650px
+//     /// / ===Footer===
+
+// // 992px - 768px
+// @media (max-width: 992px)
+//     .scrollToTop
+//         bottom: 100px
+//     header
+//         .top
+//         section.swiperContainer
+//             margin-top: 80px
+//             grid-template-columns: auto
+//             grid-template-rows: auto auto
+//             justify-items: center
+//             row-gap: 50px
+//             .control
+//                 justify-content: center 
+//                 order: 2
+//             .swiper-container
+//                 order: 1
+//     // ===First block===
+//     .firstBlock-outer-wrapper
+//         .firstBlock-inner-wrapper
+//             display: grid 
+//             grid-template-columns: auto
+//             justify-items: center
+//             .firstBlock-content
+//                 order: 2
+//                 &__title
+//                     padding-top: 25px
+//                 &__more
+//                     padding-bottom: 25px
+//             .firstBlock-figures
+//                 padding-top: 25px
+//                 order: 1
+//     // / ===First block===
+
+//     // ===Grafic===
+//     .grafic-outer-wrapper
+//         .grafic-inner-wrapper
+//             justify-items: center
+//             padding-top: 50px
+//             padding-bottom: 50px
+//             display: grid
+//             grid-template-columns: auto
+//             row-gap: 25px
+//     // / ===Grafic===
+
+//     // ===Contact===
+//     .contact-outer-wrapper
+//         .contact-inner-wrapper
+//             .contact-main-text
+//                 margin-right: 30px
+//     // / ===Contact===
+
+//     /// === Services ===
+//     section.services-outer-wrapper
+//         .services-inner-wrapper__small
+//             padding: 50px 0 40px
+//         .services-inner-wrapper
+//             display: grid
+//             grid-template-columns: auto auto
+//             row-gap: 30px
+//     /// / === Services ===
+
+//     /// ===Counters===
+//     .counters-outer-wrapper
+//         margin-top: 50px
+//         .counters-inner-wrapper
+//             margin-left: 30px
+//             .counter-block
+//                 padding: 60px 0
+//                 margin-right: 30px
+//     /// / ===Counters===
+
+//     // ===Best===
+//     section.best-outer-wrapper
+//         .best-inner-wrapper
+//             display: grid
+//             grid-template-columns: auto
+//             padding: 50px 0
+//             justify-items: center
+//             .best-content
+//                 padding-top: 25px
+//     /// / ===Best===
+
+//     // ===Quote===
+//     .quote-outer-wrapper
+//         padding: 60px 30px
+//     // / ===Quote===
+
+//     /// ===Map===
+//     .map-outer-wrapper
+//         padding-top: 50px
+//         .map-inner-wrapper
+//             display: grid
+//             grid-template-columns: auto auto
+//             row-gap: 30px
+//             padding: 42px 0 50px
+//     /// / ===Map===
+
+//     /// ===Footer===
+//     footer.footer-outer-wrapper
+//         .footer-inner-wrapper
+//             .footer-content
+//                 margin-right: 350px
+//     /// / ===Footer===
+
+// // 576px - 768px
+// @media (max-width: 768px)
+//     header
+//         .top
+//             .section-header__nav
+//                 &-wrapper
+//                     flex-direction: column
+//                     // border: 3px solid blue
+//                     height: 120px
+//                     li:not(:first-child)
+//                         margin-top: 10px
+//             .swiperContainer
+//                 display: grid
+//                 margin-left: 100px
+//                 margin-top: 210px
+//                 .section-header__slider
+//                     order: 1
+
+    
+//     // ===First block===
+//     .firstBlock-outer-wrapper
+//         .firstBlock-inner-wrapper
+//             padding-left: 50px
+//     // / ===First block===
+
+//     // ===Grafic===
+//     .grafic-outer-wrapper
+//         .grafic-inner-wrapper
+//             margin-left: 50px 
+//             .grafic-content
+//                 &__main-text
+//                     width: inherit
+                
+//     // / ===Grafic===
+
+//     // ===Contact===
+//     .contact-outer-wrapper
+//         .contact-inner-wrapper
+//             flex-direction: column
+//             align-items: center
+//             .contact-main-text
+//                 margin-right: 0
+//                 margin-bottom: 20px
+//     // / ===Contact===
+
+//     /// === Services ===
+//     section.services-outer-wrapper
+//         .services-inner-wrapper__small
+//             padding: 25px 0 40px
+//         .services-inner-wrapper
+//             display: grid
+//             grid-template-columns: auto
+//             row-gap: 20px
+//     /// / === Services ===
+
+//     /// ===Counters===
+//     .counters-outer-wrapper
+//         margin-top: 25px
+//         .counters-inner-wrapper
+//             margin-left: 0
+//             flex-direction: column
+//             .counter-block
+//                 padding: 0px 0
+//                 margin-right: 0
+//                 .counter-block__subtitle
+//                     margin-top: 5px
+
+//     /// / ===Counters===
+
+//     // ===Best ===            
+//     section.best-outer-wrapper
+//         .best-inner-wrapper
+//             // border: 3px solid red
+//             margin-left: 50px
+//     // / ===Best ===
+
+//     /// ===Map===
+//     .map-outer-wrapper
+//         .map-outer-wrapper-small
+//             max-width: 576px
+//             .title
+//                 max-width: inherit
+//             .subtitle
+//                 max-width: inherit
+//         .map-inner-wrapper
+//             max-width: 576px
+//             grid-template-columns: auto 
+//             .map-block
+//                 &__img
+//                     max-width: inherit
+//                     img 
+//                 &__content
+//                     max-width: inherit
+//                     &-title
+//                     &-contact
+//                         span 
+//                         &:last-child
+//                             span 
+//     /// / ===Map===
+
+//     /// ===Footer===
+//     footer.footer-outer-wrapper
+//         .footer-inner-wrapper
+//             .footer-content
+//                 margin-right: 250px
+//     /// / ===Footer===
+
+// //500px-576px
+// @media (max-width: 576px)
+//     .common-outer-wrapper
+//     .common-inner-wrapper
+//     .common-title
+//         width: 450px
+//         font-size: 20px
+//     .common-subtitle
+//     .common-main-text
+//     .common-more
+//     header
+//         // height: auto
+//         section.swiperContainer                                                 
+//             .swiper-container
+//                 max-width: 100vw
+//                 // justify-content: center
+//                 // flex-direction: column
+//                 .swiper-wrapper
+//                     .swiper-slide
+//                         img
+//                             max-width: 100%
+//                             padding: 0 20px
                 
                     
 
-    // ===First block===
-    .firstBlock-outer-wrapper
-        .firstBlock-inner-wrapper
-            padding-left: 0
-            // flex-direction: column
-            // align-items: center
-            .firstBlock-content
-                max-width: 450px
-                &__title
-                    max-width: inherit
-                &__main-text
-                    max-width: inherit
-    // / ===First block===
+//     // ===First block===
+//     .firstBlock-outer-wrapper
+//         .firstBlock-inner-wrapper
+//             padding-left: 0
+//             // flex-direction: column
+//             // align-items: center
+//             .firstBlock-content
+//                 max-width: 450px
+//                 &__title
+//                     max-width: inherit
+//                 &__main-text
+//                     max-width: inherit
+//     // / ===First block===
     
-    // ===Grafic===
-    .grafic-outer-wrapper
-        .grafic-inner-wrapper
-            max-width: 450px
-            padding-left: 0
-            margin-left: 0
-            .grafic-img
-            .grafic-content
-                max-width: inherit
-                .grafic-content__title
-                    max-width: inherit
-                .grafic-content__subtitle
-                    max-width: inherit
-                .grafic-content__main-text
-                    max-width: inherit
-                .grafic-content__more
-                    max-width: inherit
-    // / ===Grafic===
+//     // ===Grafic===
+//     .grafic-outer-wrapper
+//         .grafic-inner-wrapper
+//             max-width: 450px
+//             padding-left: 0
+//             margin-left: 0
+//             .grafic-img
+//             .grafic-content
+//                 max-width: inherit
+//                 .grafic-content__title
+//                     max-width: inherit
+//                 .grafic-content__subtitle
+//                     max-width: inherit
+//                 .grafic-content__main-text
+//                     max-width: inherit
+//                 .grafic-content__more
+//                     max-width: inherit
+//     // / ===Grafic===
     
-    // ===Contact===
-    .contact-outer-wrapper
-        .contact-inner-wrapper
-            .contact-main-text
-                font-size: 18px
-            .contact-button
-                input
-    // / ===Contact===
+//     // ===Contact===
+//     .contact-outer-wrapper
+//         .contact-inner-wrapper
+//             .contact-main-text
+//                 font-size: 18px
+//             .contact-button
+//                 input
+//     // / ===Contact===
 
-    // ===Best===
-    section.best-outer-wrapper
-        .best-inner-wrapper
-            margin-left: 0
-            .best-figure
-            .best-content
-                max-width: 450px
-                &__title
-                    max-width: inherit
-                &__subtitile
-                    max-width: inherit
-                &__main-text
-                    max-width: inherit
-                &__more
-                    max-width: inherit
-    /// / ===Best===
-    /// ===Map===
-    .map-outer-wrapper
-        .map-outer-wrapper-small
-            max-width: 450px
-            .title
-                max-width: inherit
-            .subtitle
-                max-width: inherit
-        .map-inner-wrapper
-            max-width: 450px
-            .map-block
-                &__img
-                    max-width: inherit
-                    img 
-                &__content
-                    max-width: inherit
-                    &-title
-                    &-contact
-                        span 
-                        &:last-child
-                            span 
-    /// / ===Map===
-    /// ===Footer===
-    footer.footer-outer-wrapper
-        .footer-inner-wrapper
-            .footer-content
-                margin-right: 100px
-                span
-            .footer-icons
-                span 
-    /// / ===Footer===
+//     // ===Best===
+//     section.best-outer-wrapper
+//         .best-inner-wrapper
+//             margin-left: 0
+//             .best-figure
+//             .best-content
+//                 max-width: 450px
+//                 &__title
+//                     max-width: inherit
+//                 &__subtitile
+//                     max-width: inherit
+//                 &__main-text
+//                     max-width: inherit
+//                 &__more
+//                     max-width: inherit
+//     /// / ===Best===
+//     /// ===Map===
+//     .map-outer-wrapper
+//         .map-outer-wrapper-small
+//             max-width: 450px
+//             .title
+//                 max-width: inherit
+//             .subtitle
+//                 max-width: inherit
+//         .map-inner-wrapper
+//             max-width: 450px
+//             .map-block
+//                 &__img
+//                     max-width: inherit
+//                     img 
+//                 &__content
+//                     max-width: inherit
+//                     &-title
+//                     &-contact
+//                         span 
+//                         &:last-child
+//                             span 
+//     /// / ===Map===
+//     /// ===Footer===
+//     footer.footer-outer-wrapper
+//         .footer-inner-wrapper
+//             .footer-content
+//                 margin-right: 100px
+//                 span
+//             .footer-icons
+//                 span 
+//     /// / ===Footer===
 
-@media (max-width: 450px)
-    .common-outer-wrapper
-    .common-inner-wrapper
-    .common-title
-        width: 280px
-        font-size: 20px
-    .common-subtitle
-    .common-main-text
-    .common-more
-    header
-        .header-wrapper
-            .nav-wrapper
-                .section-header-logo
-                    &_subtile
-                .section-header__nav
-                    &-wrapper
-                        li
-                            margin-right: 0
-                            a
-            .header-content-wrapper
-                .section-header__slider
-                    span
-                    span:first-child, span:last-child
-                .products
-                    width: 200px //!
-                    &-main
-                        font-size: 25px //!
-                        top: 55px
-                        line-height: 35px
-                        margin-left: -50px
-                        .more
-                            font-size: 16px
-                            line-height: 5px
-                            margin-top: 35px
-                            margin-left: 10px
-                    &-ring
-                        right: 0px
-                        img
-                            width: 299px*0.7
-                            height: 378px*0.7
-    // ===First block===
-    .firstBlock-outer-wrapper
-        .firstBlock-inner-wrapper
-            width: 280px
-            margin: 0
-            padding: 0
-            .firstBlock-content
-                width: inherit
-                &__title
-                    width: inherit
-                &__subtitle
-                    width: inherit
-                &__main-text
-                    width: inherit
-                &__more
-                    width: inherit
-            .firstBlock-figures
-                img 
-                    width: 513px*0.5
-                    height: auto
-    // / ===First block===
-    // ===Grafic===
-    .grafic-outer-wrapper
-        .grafic-inner-wrapper
-            .grafic-img
-                img
-                    width: 531px*0.5
-                    height: auto
-                    padding-left: 0px
-            .grafic-content
-                max-width: 280px
-                &__title
-                &__subtitle
-                &__main-text
-                &__more
-    // / ===Grafic===
-    // ===Contact===
-    .contact-outer-wrapper
-        .contact-inner-wrapper
-            .contact-main-text
-                font-size: 18px
-                line-height: 30px
-                text-align: center
-            .contact-button
-                input
-    // / ===Contact===
-    /// ===Services===
-    section.services-outer-wrapper
-        .services-inner-wrapper__small
-            .services-title
-                text-align: center
-            .services-subtitle
-        .services-inner-wrapper
-            max-width: 280px
-            .services-block
-                &__figure
-                    max-width: inherit
-                &__title
-                    max-width: inherit
-                    text-align: center
-                &__subtitle
-                    max-width: inherit
-                &:first-child
-                    .services-block__figure
-                &:nth-of-type(2)
-                    .services-block__figure
-                &:last-child
-    /// / ===Services===
-    // ===Best===
-    section.best-outer-wrapper
-        @include outer-wrapper
-        .best-inner-wrapper
-            max-width: 280px
-            .best-figure
-                max-width: inherit
-                img 
-                    width: 497px*0.5
-                    height: 525px*0.5
-            .best-content
-                max-width: inherit
-                &__title
-                &__subtitile
-                &__main-text
-                &__more
-    /// / ===Best===
-    /// ===Map===
-    .map-outer-wrapper
-        .map-outer-wrapper-small
-            max-width: 280px
-            .title
-                max-width: inherit
-            .subtitle
-                max-width: inherit
-        .map-inner-wrapper
-            max-width: 280px
-            .map-block
-                margin-left: 20px
-                &__img
-                    max-width: inherit
-                    img 
-                        width: 370px*0.7
-                &__content
-                    max-width: inherit
-                    &-title
-                    &-contact
-                        span 
-                        &:last-child
-                            span 
-    // / ===Map=== 
-    /// ===Footer===
-    footer.footer-outer-wrapper
-        .footer-inner-wrapper
-            .footer-content
-                margin-right: 30px
-                span
-            .footer-icons
-                span 
-    /// / ===Footer===
+// @media (max-width: 450px)
+//     .common-outer-wrapper
+//     .common-inner-wrapper
+//     .common-title
+//         width: 280px
+//         font-size: 20px
+//     .common-subtitle
+//     .common-main-text
+//     .common-more
+//     header
+//         .header-wrapper
+//             .nav-wrapper
+//                 .section-header-logo
+//                     &_subtile
+//                 .section-header__nav
+//                     &-wrapper
+//                         li
+//                             margin-right: 0
+//                             a
+//             .header-content-wrapper
+//                 .section-header__slider
+//                     span
+//                     span:first-child, span:last-child
+//                 .products
+//                     width: 200px //!
+//                     &-main
+//                         font-size: 25px //!
+//                         top: 55px
+//                         line-height: 35px
+//                         margin-left: -50px
+//                         .more
+//                             font-size: 16px
+//                             line-height: 5px
+//                             margin-top: 35px
+//                             margin-left: 10px
+//                     &-ring
+//                         right: 0px
+//                         img
+//                             width: 299px*0.7
+//                             height: 378px*0.7
+//     // ===First block===
+//     .firstBlock-outer-wrapper
+//         .firstBlock-inner-wrapper
+//             width: 280px
+//             margin: 0
+//             padding: 0
+//             .firstBlock-content
+//                 width: inherit
+//                 &__title
+//                     width: inherit
+//                 &__subtitle
+//                     width: inherit
+//                 &__main-text
+//                     width: inherit
+//                 &__more
+//                     width: inherit
+//             .firstBlock-figures
+//                 img 
+//                     width: 513px*0.5
+//                     height: auto
+//     // / ===First block===
+//     // ===Grafic===
+//     .grafic-outer-wrapper
+//         .grafic-inner-wrapper
+//             .grafic-img
+//                 img
+//                     width: 531px*0.5
+//                     height: auto
+//                     padding-left: 0px
+//             .grafic-content
+//                 max-width: 280px
+//                 &__title
+//                 &__subtitle
+//                 &__main-text
+//                 &__more
+//     // / ===Grafic===
+//     // ===Contact===
+//     .contact-outer-wrapper
+//         .contact-inner-wrapper
+//             .contact-main-text
+//                 font-size: 18px
+//                 line-height: 30px
+//                 text-align: center
+//             .contact-button
+//                 input
+//     // / ===Contact===
+//     /// ===Services===
+//     section.services-outer-wrapper
+//         .services-inner-wrapper__small
+//             .services-title
+//                 text-align: center
+//             .services-subtitle
+//         .services-inner-wrapper
+//             max-width: 280px
+//             .services-block
+//                 &__figure
+//                     max-width: inherit
+//                 &__title
+//                     max-width: inherit
+//                     text-align: center
+//                 &__subtitle
+//                     max-width: inherit
+//                 &:first-child
+//                     .services-block__figure
+//                 &:nth-of-type(2)
+//                     .services-block__figure
+//                 &:last-child
+//     /// / ===Services===
+//     // ===Best===
+//     section.best-outer-wrapper
+//         @include outer-wrapper
+//         .best-inner-wrapper
+//             max-width: 280px
+//             .best-figure
+//                 max-width: inherit
+//                 img 
+//                     width: 497px*0.5
+//                     height: 525px*0.5
+//             .best-content
+//                 max-width: inherit
+//                 &__title
+//                 &__subtitile
+//                 &__main-text
+//                 &__more
+//     /// / ===Best===
+//     /// ===Map===
+//     .map-outer-wrapper
+//         .map-outer-wrapper-small
+//             max-width: 280px
+//             .title
+//                 max-width: inherit
+//             .subtitle
+//                 max-width: inherit
+//         .map-inner-wrapper
+//             max-width: 280px
+//             .map-block
+//                 margin-left: 20px
+//                 &__img
+//                     max-width: inherit
+//                     img 
+//                         width: 370px*0.7
+//                 &__content
+//                     max-width: inherit
+//                     &-title
+//                     &-contact
+//                         span 
+//                         &:last-child
+//                             span 
+//     // / ===Map=== 
+//     /// ===Footer===
+//     footer.footer-outer-wrapper
+//         .footer-inner-wrapper
+//             .footer-content
+//                 margin-right: 30px
+//                 span
+//             .footer-icons
+//                 span 
+//     /// / ===Footer===
 
