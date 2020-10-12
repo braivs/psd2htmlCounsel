@@ -400,16 +400,17 @@ main
 /// ===Footer===
 footer
     display: flex
-    justify-content: center
+    align-items: center
     background-color: #002e5b
     width: 100% 
+    flex-direction: column
+    padding: 30px 0
     .footer-inner
         display: flex
         justify-content: space-between
         color: #ffffff
         font-size: 16px
         line-height: 45px
-        padding: 30px 0
         .footer-content
             span
                 margin-left: 5px
@@ -417,6 +418,24 @@ footer
         .footer-icons
             span 
                 margin-right: 15px
+    .contacts
+        display: flex
+        justify-content: center
+        align-items: center
+        p
+            color: white
+            padding: 0
+            text-align: left
+            &:nth-of-type(1)
+                margin-right: 5px
+            &:nth-of-type(2)
+                margin-left: 5px
+        a  
+            margin-left: 0
+            padding: 0
+        img
+            width: 25px
+            opacity: 0.3
 /// / ===Footer===
 
 @import  'media'
